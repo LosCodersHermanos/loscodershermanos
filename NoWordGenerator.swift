@@ -9,7 +9,7 @@
 import UIKit
 
 class NoWordGenerator: UIViewController {
-    var characterNumber : Int = 0
+    var characterNumber : Int = 3
 
     @IBOutlet weak var fonemaIniziale: UITextField!
     @IBOutlet weak var parolaGenerata: UILabel!
@@ -23,7 +23,8 @@ class NoWordGenerator: UIViewController {
     //Imposto le lettere da usare
     let lettere = [ "r", "t", "p", "s", "d", "f", "g", "l", "z", "c", "v", "b", "n", "m"]
     let vocali = ["a", "e", "i", "o", "u"]
-    
+    // Controllo parole conosciute
+
     
     
     
@@ -38,39 +39,50 @@ parolaGenerata.text = " "    }
         // Dispose of any resources that can be recreated.
     }
     @IBAction func generationStart(_ sender: Any) {
-
-        let MAX : UInt32 = 13
-        let random_number = Int(arc4random_uniform(MAX))
-        let random_number2 = Int(arc4random_uniform(MAX))
-        let random_number4 = Int(arc4random_uniform(MAX))
-        let random_number6 = Int(arc4random_uniform(MAX))
-        let random_number8 = Int(arc4random_uniform(MAX))
-        
-        let MAX1 : UInt32 = 5
-        let random_number1 = Int(arc4random_uniform(MAX1))
-        let random_number3 = Int(arc4random_uniform(MAX1))
-        let random_number5 = Int(arc4random_uniform(MAX1))
-        let random_number7 = Int(arc4random_uniform(MAX1))
-        let random_number9 = Int(arc4random_uniform(MAX1))
-        
-        
-        let l1 = lettere[random_number]
-        let l2 = vocali[random_number1]
-        let l3 = lettere[random_number2]
-        let l4 = vocali[random_number3]
-        let l5 = lettere[random_number4]
-        let l6 = vocali[random_number5]
-        let l7 = lettere[random_number6]
-        let l8 = vocali[random_number7]
-        let l9 = lettere[random_number8]
-        let l10 = vocali[random_number9]
-        
-        let fChar = fonemaIniziale.text?.first
-        let lastChar = fonemaIniziale.text?.last
+        generazione()
+        generationAndCheck()
         
         // var w = lunghezzaSlider.value
         
-        if phonemSwitch.isOn {
+    }
+    func generazione()-> String {
+        if  (fonemaIniziale.text?.isEmpty)! {
+            let alert = UIAlertController(title: "Attenzione", message: "Inserisci un Fonema" ,preferredStyle: .alert)
+            let okAction = UIAlertAction(title: "Ok" , style: .default)
+            present(alert, animated: true)
+            alert.addAction(okAction)
+            
+        } else {
+            let MAX : UInt32 = 13
+            let random_number = Int(arc4random_uniform(MAX))
+            let random_number2 = Int(arc4random_uniform(MAX))
+            let random_number4 = Int(arc4random_uniform(MAX))
+            let random_number6 = Int(arc4random_uniform(MAX))
+            let random_number8 = Int(arc4random_uniform(MAX))
+            
+            let MAX1 : UInt32 = 5
+            let random_number1 = Int(arc4random_uniform(MAX1))
+            let random_number3 = Int(arc4random_uniform(MAX1))
+            let random_number5 = Int(arc4random_uniform(MAX1))
+            let random_number7 = Int(arc4random_uniform(MAX1))
+            let random_number9 = Int(arc4random_uniform(MAX1))
+            
+            
+            let l1 = lettere[random_number]
+            let l2 = vocali[random_number1]
+            let l3 = lettere[random_number2]
+            let l4 = vocali[random_number3]
+            let l5 = lettere[random_number4]
+            let l6 = vocali[random_number5]
+            let l7 = lettere[random_number6]
+            let l8 = vocali[random_number7]
+            let l9 = lettere[random_number8]
+            let l10 = vocali[random_number9]
+            
+            let fChar = fonemaIniziale.text?.first
+            let lastChar = fonemaIniziale.text?.last
+
+         if phonemSwitch.isOn {
             
             if vocali.contains("\(fChar!)"){
                 if vocali.contains("\(lastChar!)"){
@@ -106,13 +118,51 @@ parolaGenerata.text = " "    }
             }
         }
         
+    }
+        return parolaGenerata.text!
+       
+    }
+            func generationAndCheck() -> String  {
         let str = parolaGenerata.text!
         let index = str.index(str.startIndex , offsetBy: characterNumber)
-        let trimStr = str.substring(to: index)
-        parolaGenerata.text = trimStr
+        var trimStr = str.substring(to: index)
         
-        
-        
+    
+              var parole: String = ""
+                if let filepath = Bundle.main.path(forResource: "dizionario", ofType: "txt") {
+            do {
+             parole = try String(contentsOfFile: filepath)
+                print(trimStr)
+            } catch {
+                // contents could not be loaded
+//                    }
+//                    let test: [String] = parole.components(separatedBy: "\n")
+//                    guard test.contains(trimStr) else {
+//                        parolaGenerata.isHidden = false
+//                        parolaGenerata.text = trimStr
+//                        return trimStr
+//                    }
+//                    trimStr = ""
+                while parole.contains(trimStr){
+                    print(trimStr)
+                    trimStr = " "
+                   
+                    self.generazione()
+                    self.generationAndCheck()
+                    
+//                                           let newTrimStr:String
+//                                           newTrimStr = generazione()
+//                                            parolaGenerata.text = newTrimStr
+                
+                    parolaGenerata.text = trimStr
+                    parolaGenerata.isHidden = true
+                    
+                }
     }
+                    parolaGenerata.text = trimStr
+        return trimStr
+    }
+                return trimStr
+}
     
 }

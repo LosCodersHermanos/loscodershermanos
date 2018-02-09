@@ -27,6 +27,15 @@
                                     <segue destination="hhB-H2-TPe" kind="show" id="ESO-wE-mNl"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2a8-8v-a2H">
+                                <rect key="frame" x="708" y="61" width="322" height="425"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="43"/>
+                                <state key="normal" title="Gioco Suoni"/>
+                                <connections>
+                                    <segue destination="rcf-bO-3Nf" kind="show" id="6AZ-kJ-woH"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -35,6 +44,14 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="138.66906474820144" y="136.69064748201438"/>
+        </scene>
+        <!--MemoSound-->
+        <scene sceneID="4T5-xN-aG8">
+            <objects>
+                <viewControllerPlaceholder storyboardName="MemoSound" id="rcf-bO-3Nf" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nxj-CD-iAw" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="642" y="-51"/>
         </scene>
         <!--NoWordGenerator-->
         <scene sceneID="5kN-xd-sr6">

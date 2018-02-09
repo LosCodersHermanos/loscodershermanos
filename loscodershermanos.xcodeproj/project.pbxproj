@@ -22,6 +22,13 @@
 		99AF6596202DB12C00F49A3E /* Snaker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99AF6595202DB12C00F49A3E /* Snaker.swift */; };
 		99AF6598202DB14B00F49A3E /* Snaker.sks in Resources */ = {isa = PBXBuildFile; fileRef = 99AF6597202DB14B00F49A3E /* Snaker.sks */; };
 		99AF659A202DB17000F49A3E /* Snaker.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 99AF6599202DB17000F49A3E /* Snaker.storyboard */; };
+		99AF659E202DD9EE00F49A3E /* dizionario.txt in Resources */ = {isa = PBXBuildFile; fileRef = 99AF659D202DD9EE00F49A3E /* dizionario.txt */; };
+		99AF65A0202E351C00F49A3E /* MemoSound.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 99AF659F202E351C00F49A3E /* MemoSound.storyboard */; };
+		99AF65A2202E352800F49A3E /* MemoSoundViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99AF65A1202E352800F49A3E /* MemoSoundViewController.swift */; };
+		99AF65A8202E3A2500F49A3E /* 3.wav in Resources */ = {isa = PBXBuildFile; fileRef = 99AF65A4202E3A2500F49A3E /* 3.wav */; };
+		99AF65A9202E3A2500F49A3E /* 4.wav in Resources */ = {isa = PBXBuildFile; fileRef = 99AF65A5202E3A2500F49A3E /* 4.wav */; };
+		99AF65AA202E3A2500F49A3E /* 1.wav in Resources */ = {isa = PBXBuildFile; fileRef = 99AF65A6202E3A2500F49A3E /* 1.wav */; };
+		99AF65AB202E3A2500F49A3E /* 2.wav in Resources */ = {isa = PBXBuildFile; fileRef = 99AF65A7202E3A2500F49A3E /* 2.wav */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +70,13 @@
 		99AF6595202DB12C00F49A3E /* Snaker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Snaker.swift; sourceTree = "<group>"; };
 		99AF6597202DB14B00F49A3E /* Snaker.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Snaker.sks; sourceTree = "<group>"; };
 		99AF6599202DB17000F49A3E /* Snaker.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Snaker.storyboard; sourceTree = "<group>"; };
+		99AF659D202DD9EE00F49A3E /* dizionario.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = dizionario.txt; sourceTree = "<group>"; };
+		99AF659F202E351C00F49A3E /* MemoSound.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MemoSound.storyboard; sourceTree = "<group>"; };
+		99AF65A1202E352800F49A3E /* MemoSoundViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoSoundViewController.swift; sourceTree = "<group>"; };
+		99AF65A4202E3A2500F49A3E /* 3.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = 3.wav; sourceTree = "<group>"; };
+		99AF65A5202E3A2500F49A3E /* 4.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = 4.wav; sourceTree = "<group>"; };
+		99AF65A6202E3A2500F49A3E /* 1.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = 1.wav; sourceTree = "<group>"; };
+		99AF65A7202E3A2500F49A3E /* 2.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = 2.wav; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -145,8 +159,8 @@
 			isa = PBXGroup;
 			children = (
 				99AF6565202DAE7900F49A3E /* Assets.xcassets */,
+				99AF659D202DD9EE00F49A3E /* dizionario.txt */,
 				99AF6567202DAE7900F49A3E /* LaunchScreen.storyboard */,
-				99AF655F202DAE7900F49A3E /* Main.storyboard */,
 			);
 			name = StoryBoards;
 			path = "ù";
@@ -155,11 +169,10 @@
 		99AF659B202DB17D00F49A3E /* Games */ = {
 			isa = PBXGroup;
 			children = (
+				99AF65AC202E3A3200F49A3E /* SoundMemoryGame */,
 				99AF659C202DB1A200F49A3E /* StoryBoards */,
-				99AF6595202DB12C00F49A3E /* Snaker.swift */,
-				99AF6593202DB11500F49A3E /* CardGame.swift */,
+				99AF65A3202E355300F49A3E /* GamesController */,
 				99AF6597202DB14B00F49A3E /* Snaker.sks */,
-				99AF6591202DB0F600F49A3E /* NoWordGenerator.swift */,
 			);
 			name = Games;
 			path = ..;
@@ -171,8 +184,32 @@
 				99AF6599202DB17000F49A3E /* Snaker.storyboard */,
 				99AF658C202DB08B00F49A3E /* NoWordGenerator.storyboard */,
 				99AF658E202DB0A100F49A3E /* CardGame.storyboard */,
+				99AF655F202DAE7900F49A3E /* Main.storyboard */,
+				99AF659F202E351C00F49A3E /* MemoSound.storyboard */,
 			);
 			name = StoryBoards;
+			sourceTree = "<group>";
+		};
+		99AF65A3202E355300F49A3E /* GamesController */ = {
+			isa = PBXGroup;
+			children = (
+				99AF6595202DB12C00F49A3E /* Snaker.swift */,
+				99AF6593202DB11500F49A3E /* CardGame.swift */,
+				99AF6591202DB0F600F49A3E /* NoWordGenerator.swift */,
+				99AF65A1202E352800F49A3E /* MemoSoundViewController.swift */,
+			);
+			name = GamesController;
+			sourceTree = "<group>";
+		};
+		99AF65AC202E3A3200F49A3E /* SoundMemoryGame */ = {
+			isa = PBXGroup;
+			children = (
+				99AF65A6202E3A2500F49A3E /* 1.wav */,
+				99AF65A7202E3A2500F49A3E /* 2.wav */,
+				99AF65A4202E3A2500F49A3E /* 3.wav */,
+				99AF65A5202E3A2500F49A3E /* 4.wav */,
+			);
+			name = SoundMemoryGame;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -282,10 +319,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				99AF65AB202E3A2500F49A3E /* 2.wav in Resources */,
+				99AF65A9202E3A2500F49A3E /* 4.wav in Resources */,
+				99AF659E202DD9EE00F49A3E /* dizionario.txt in Resources */,
 				99AF658F202DB0A100F49A3E /* CardGame.storyboard in Resources */,
 				99AF6569202DAE7900F49A3E /* LaunchScreen.storyboard in Resources */,
+				99AF65A0202E351C00F49A3E /* MemoSound.storyboard in Resources */,
 				99AF658D202DB08B00F49A3E /* NoWordGenerator.storyboard in Resources */,
+				99AF65AA202E3A2500F49A3E /* 1.wav in Resources */,
 				99AF6566202DAE7900F49A3E /* Assets.xcassets in Resources */,
+				99AF65A8202E3A2500F49A3E /* 3.wav in Resources */,
 				99AF659A202DB17000F49A3E /* Snaker.storyboard in Resources */,
 				99AF6561202DAE7900F49A3E /* Main.storyboard in Resources */,
 				99AF6598202DB14B00F49A3E /* Snaker.sks in Resources */,
@@ -316,6 +359,7 @@
 				99AF6592202DB0F600F49A3E /* NoWordGenerator.swift in Sources */,
 				99AF655E202DAE7900F49A3E /* ViewController.swift in Sources */,
 				99AF6564202DAE7900F49A3E /* loscodershermanos.xcdatamodeld in Sources */,
+				99AF65A2202E352800F49A3E /* MemoSoundViewController.swift in Sources */,
 				99AF6596202DB12C00F49A3E /* Snaker.swift in Sources */,
 				99AF655C202DAE7900F49A3E /* AppDelegate.swift in Sources */,
 				99AF6594202DB11500F49A3E /* CardGame.swift in Sources */,
