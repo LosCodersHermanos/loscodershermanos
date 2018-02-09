@@ -15,6 +15,13 @@
 		99AF6569202DAE7900F49A3E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 99AF6567202DAE7900F49A3E /* LaunchScreen.storyboard */; };
 		99AF6574202DAE7900F49A3E /* loscodershermanosTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99AF6573202DAE7900F49A3E /* loscodershermanosTests.swift */; };
 		99AF657F202DAE7900F49A3E /* loscodershermanosUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99AF657E202DAE7900F49A3E /* loscodershermanosUITests.swift */; };
+		99AF658D202DB08B00F49A3E /* NoWordGenerator.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 99AF658C202DB08B00F49A3E /* NoWordGenerator.storyboard */; };
+		99AF658F202DB0A100F49A3E /* CardGame.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 99AF658E202DB0A100F49A3E /* CardGame.storyboard */; };
+		99AF6592202DB0F600F49A3E /* NoWordGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99AF6591202DB0F600F49A3E /* NoWordGenerator.swift */; };
+		99AF6594202DB11500F49A3E /* CardGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99AF6593202DB11500F49A3E /* CardGame.swift */; };
+		99AF6596202DB12C00F49A3E /* Snaker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99AF6595202DB12C00F49A3E /* Snaker.swift */; };
+		99AF6598202DB14B00F49A3E /* Snaker.sks in Resources */ = {isa = PBXBuildFile; fileRef = 99AF6597202DB14B00F49A3E /* Snaker.sks */; };
+		99AF659A202DB17000F49A3E /* Snaker.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 99AF6599202DB17000F49A3E /* Snaker.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +56,13 @@
 		99AF657A202DAE7900F49A3E /* loscodershermanosUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = loscodershermanosUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		99AF657E202DAE7900F49A3E /* loscodershermanosUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = loscodershermanosUITests.swift; sourceTree = "<group>"; };
 		99AF6580202DAE7900F49A3E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		99AF658C202DB08B00F49A3E /* NoWordGenerator.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = NoWordGenerator.storyboard; sourceTree = "<group>"; };
+		99AF658E202DB0A100F49A3E /* CardGame.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CardGame.storyboard; sourceTree = "<group>"; };
+		99AF6591202DB0F600F49A3E /* NoWordGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoWordGenerator.swift; sourceTree = "<group>"; };
+		99AF6593202DB11500F49A3E /* CardGame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardGame.swift; sourceTree = "<group>"; };
+		99AF6595202DB12C00F49A3E /* Snaker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Snaker.swift; sourceTree = "<group>"; };
+		99AF6597202DB14B00F49A3E /* Snaker.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Snaker.sks; sourceTree = "<group>"; };
+		99AF6599202DB17000F49A3E /* Snaker.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Snaker.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,9 +115,8 @@
 			children = (
 				99AF655B202DAE7900F49A3E /* AppDelegate.swift */,
 				99AF655D202DAE7900F49A3E /* ViewController.swift */,
-				99AF655F202DAE7900F49A3E /* Main.storyboard */,
-				99AF6565202DAE7900F49A3E /* Assets.xcassets */,
-				99AF6567202DAE7900F49A3E /* LaunchScreen.storyboard */,
+				99AF659B202DB17D00F49A3E /* Games */,
+				99AF6590202DB0AE00F49A3E /* StoryBoards */,
 				99AF656A202DAE7900F49A3E /* Info.plist */,
 				99AF6562202DAE7900F49A3E /* loscodershermanos.xcdatamodeld */,
 			);
@@ -126,6 +139,40 @@
 				99AF6580202DAE7900F49A3E /* Info.plist */,
 			);
 			path = loscodershermanosUITests;
+			sourceTree = "<group>";
+		};
+		99AF6590202DB0AE00F49A3E /* StoryBoards */ = {
+			isa = PBXGroup;
+			children = (
+				99AF6565202DAE7900F49A3E /* Assets.xcassets */,
+				99AF6567202DAE7900F49A3E /* LaunchScreen.storyboard */,
+				99AF655F202DAE7900F49A3E /* Main.storyboard */,
+			);
+			name = StoryBoards;
+			path = "ù";
+			sourceTree = "<group>";
+		};
+		99AF659B202DB17D00F49A3E /* Games */ = {
+			isa = PBXGroup;
+			children = (
+				99AF659C202DB1A200F49A3E /* StoryBoards */,
+				99AF6595202DB12C00F49A3E /* Snaker.swift */,
+				99AF6593202DB11500F49A3E /* CardGame.swift */,
+				99AF6597202DB14B00F49A3E /* Snaker.sks */,
+				99AF6591202DB0F600F49A3E /* NoWordGenerator.swift */,
+			);
+			name = Games;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		99AF659C202DB1A200F49A3E /* StoryBoards */ = {
+			isa = PBXGroup;
+			children = (
+				99AF6599202DB17000F49A3E /* Snaker.storyboard */,
+				99AF658C202DB08B00F49A3E /* NoWordGenerator.storyboard */,
+				99AF658E202DB0A100F49A3E /* CardGame.storyboard */,
+			);
+			name = StoryBoards;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -235,9 +282,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				99AF658F202DB0A100F49A3E /* CardGame.storyboard in Resources */,
 				99AF6569202DAE7900F49A3E /* LaunchScreen.storyboard in Resources */,
+				99AF658D202DB08B00F49A3E /* NoWordGenerator.storyboard in Resources */,
 				99AF6566202DAE7900F49A3E /* Assets.xcassets in Resources */,
+				99AF659A202DB17000F49A3E /* Snaker.storyboard in Resources */,
 				99AF6561202DAE7900F49A3E /* Main.storyboard in Resources */,
+				99AF6598202DB14B00F49A3E /* Snaker.sks in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -262,9 +313,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				99AF6592202DB0F600F49A3E /* NoWordGenerator.swift in Sources */,
 				99AF655E202DAE7900F49A3E /* ViewController.swift in Sources */,
 				99AF6564202DAE7900F49A3E /* loscodershermanos.xcdatamodeld in Sources */,
+				99AF6596202DB12C00F49A3E /* Snaker.swift in Sources */,
 				99AF655C202DAE7900F49A3E /* AppDelegate.swift in Sources */,
+				99AF6594202DB11500F49A3E /* CardGame.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -437,7 +491,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = LuigiScherillo.loscodershermanos;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Debug;
 		};
@@ -452,7 +506,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = LuigiScherillo.loscodershermanos;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Release;
 		};
