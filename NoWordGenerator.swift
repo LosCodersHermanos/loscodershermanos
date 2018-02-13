@@ -215,10 +215,10 @@ class NoWordGenerator: UIViewController {
             } else {
                 
                 if vocali.contains("\(fChar!)"){
-                    parolaGenerata.text = /*l1 + l2 + l3 +*/ l4 + l5 + l6 + l7 + l8 + l9 + l10 + l11 + fonemaIniziale.text!
+                    parolaGenerata.text = l1 + l2 + l3 + l4 + l5 + l6 + l7 + l8 + l9 + l10 + l11 + fonemaIniziale.text!
                     
                 } else {
-                    parolaGenerata.text = /* l1 + l2 +*/ l3 +  l4 + l5 + l6 + l7 + l8 + l9 + l10 + fonemaIniziale.text!
+                    parolaGenerata.text =  l1 + l2 + l3 +  l4 + l5 + l6 + l7 + l8 + l9 + l10 + fonemaIniziale.text!
                     
                 }
                 
