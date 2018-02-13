@@ -42,6 +42,7 @@ class SnakerViewController: UIViewController, AVAudioPlayerDelegate {
         
         
         setUpAudioFiles()
+        animate(mushroom)
         
     }
 
@@ -69,23 +70,42 @@ class SnakerViewController: UIViewController, AVAudioPlayerDelegate {
     
     
     
-    @IBAction func handlePan(_ sender: UIPanGestureRecognizer) {
-        switch sender.state {
-        case .began:
-            snakePlayer.play()
-           snakePlayer.numberOfLoops = 1000
-            
-        case .ended:
-            snakePlayer.stop()
-       
-        default: break
+//    @IBAction func handlePan(_ sender: UIPanGestureRecognizer) {
+//        switch sender.state {
+//        case .began:
+//            snakePlayer.play()
+//           snakePlayer.numberOfLoops = 1000
+//
+//        case .ended:
+//            snakePlayer.stop()
+//
+//        default: break
+//        }
+//
+//    }
+    
+    
+    
+    
+    
+    @IBOutlet weak var mushroom: UIImageView!
+    func animate(_ image: UIImageView) {
+        UIView.animate(withDuration: 5, delay: 0, options: .curveLinear, animations: {
+            image.transform = CGAffineTransform(translationX: -100, y: 0)
+        }) { (success: Bool) in
+            image.transform = CGAffineTransform.identity
+            self.animate(self.mushroom)
         }
-        
     }
+    
+    
     
     
     @objc func viewDidDragged() {
         let newPoint = panGesture.location(in: self.view)
+        snakePlayer.play()
+    
+        
         
         
         func CGRectMake(_ x: CGFloat, _ y: CGFloat, _ width: CGFloat, _ height: CGFloat) -> CGRect {

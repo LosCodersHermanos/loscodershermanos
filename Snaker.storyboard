@@ -22,6 +22,10 @@
                                 <rect key="frame" x="0.0" y="0.0" width="1112" height="834"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="fungo" translatesAutoresizingMaskIntoConstraints="NO" id="EPc-VU-Ae5">
+                                <rect key="frame" x="603" y="113" width="123" height="122"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fdi-ZX-dgi">
                                 <rect key="frame" x="85" y="291" width="252" height="135"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -37,6 +41,7 @@
                         <viewLayoutGuide key="safeArea" id="tQp-YJ-TaH"/>
                     </view>
                     <connections>
+                        <outlet property="mushroom" destination="EPc-VU-Ae5" id="sF3-5k-Tsi"/>
                         <outlet property="snake" destination="fdi-ZX-dgi" id="pBe-YM-jY3"/>
                     </connections>
                 </viewController>
@@ -47,6 +52,7 @@
     </scenes>
     <resources>
         <image name="backgroundSnaker" width="1024" height="768"/>
+        <image name="fungo" width="830" height="770"/>
         <image name="serpente.png" width="2420" height="940"/>
     </resources>
 </document>
