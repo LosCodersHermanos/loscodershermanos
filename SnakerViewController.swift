@@ -11,7 +11,7 @@ import AVFoundation
 
 class SnakerViewController: UIViewController, AVAudioPlayerDelegate {
     
-    
+    // outlet della view
     @IBOutlet weak var snake: UIView!
     
     
@@ -77,6 +77,7 @@ class SnakerViewController: UIViewController, AVAudioPlayerDelegate {
         }
         
     }
+    
     
     @objc func viewDidDragged() {
         let newPoint = panGesture.location(in: self.view)
