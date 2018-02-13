@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		400B9C622033404D00C291A6 /* serpente.png in Resources */ = {isa = PBXBuildFile; fileRef = 400B9C612033404D00C291A6 /* serpente.png */; };
 		40F9116E2031DC8D009F6961 /* Snaker.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 40F9116C2031DC8D009F6961 /* Snaker.storyboard */; };
 		40F911702031DCD1009F6961 /* SnakerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40F9116F2031DCD1009F6961 /* SnakerViewController.swift */; };
 		40F911722031DCFC009F6961 /* s sound.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 40F911712031DCFC009F6961 /* s sound.m4a */; };
@@ -50,6 +51,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		400B9C612033404D00C291A6 /* serpente.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = serpente.png; sourceTree = "<group>"; };
 		40F9116D2031DC8D009F6961 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = ../Snaker/Snaker/Base.lproj/Snaker.storyboard; sourceTree = "<group>"; };
 		40F9116F2031DCD1009F6961 /* SnakerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SnakerViewController.swift; sourceTree = "<group>"; };
 		40F911712031DCFC009F6961 /* s sound.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = "s sound.m4a"; sourceTree = "<group>"; };
@@ -185,6 +187,7 @@
 			children = (
 				99AF658C202DB08B00F49A3E /* NoWordGenerator.storyboard */,
 				40F9116C2031DC8D009F6961 /* Snaker.storyboard */,
+				400B9C612033404D00C291A6 /* serpente.png */,
 				40F911712031DCFC009F6961 /* s sound.m4a */,
 				99AF658E202DB0A100F49A3E /* CardGame.storyboard */,
 				99AF655F202DAE7900F49A3E /* Main.storyboard */,
@@ -328,6 +331,7 @@
 				99AF659E202DD9EE00F49A3E /* dizionario.txt in Resources */,
 				99AF658F202DB0A100F49A3E /* CardGame.storyboard in Resources */,
 				40F9116E2031DC8D009F6961 /* Snaker.storyboard in Resources */,
+				400B9C622033404D00C291A6 /* serpente.png in Resources */,
 				99AF6569202DAE7900F49A3E /* LaunchScreen.storyboard in Resources */,
 				99AF65A0202E351C00F49A3E /* MemoSound.storyboard in Resources */,
 				99AF658D202DB08B00F49A3E /* NoWordGenerator.storyboard in Resources */,
