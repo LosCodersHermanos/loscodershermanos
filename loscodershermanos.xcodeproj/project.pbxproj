@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		40F9116E2031DC8D009F6961 /* Snaker.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 40F9116C2031DC8D009F6961 /* Snaker.storyboard */; };
+		40F911702031DCD1009F6961 /* SnakerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40F9116F2031DCD1009F6961 /* SnakerViewController.swift */; };
+		40F911722031DCFC009F6961 /* s sound.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 40F911712031DCFC009F6961 /* s sound.m4a */; };
 		99AF655C202DAE7900F49A3E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99AF655B202DAE7900F49A3E /* AppDelegate.swift */; };
 		99AF655E202DAE7900F49A3E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99AF655D202DAE7900F49A3E /* ViewController.swift */; };
 		99AF6561202DAE7900F49A3E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 99AF655F202DAE7900F49A3E /* Main.storyboard */; };
@@ -19,9 +22,7 @@
 		99AF658F202DB0A100F49A3E /* CardGame.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 99AF658E202DB0A100F49A3E /* CardGame.storyboard */; };
 		99AF6592202DB0F600F49A3E /* NoWordGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99AF6591202DB0F600F49A3E /* NoWordGenerator.swift */; };
 		99AF6594202DB11500F49A3E /* CardGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99AF6593202DB11500F49A3E /* CardGame.swift */; };
-		99AF6596202DB12C00F49A3E /* Snaker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99AF6595202DB12C00F49A3E /* Snaker.swift */; };
 		99AF6598202DB14B00F49A3E /* Snaker.sks in Resources */ = {isa = PBXBuildFile; fileRef = 99AF6597202DB14B00F49A3E /* Snaker.sks */; };
-		99AF659A202DB17000F49A3E /* Snaker.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 99AF6599202DB17000F49A3E /* Snaker.storyboard */; };
 		99AF659E202DD9EE00F49A3E /* dizionario.txt in Resources */ = {isa = PBXBuildFile; fileRef = 99AF659D202DD9EE00F49A3E /* dizionario.txt */; };
 		99AF65A0202E351C00F49A3E /* MemoSound.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 99AF659F202E351C00F49A3E /* MemoSound.storyboard */; };
 		99AF65A2202E352800F49A3E /* MemoSoundViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99AF65A1202E352800F49A3E /* MemoSoundViewController.swift */; };
@@ -49,6 +50,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		40F9116D2031DC8D009F6961 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = ../Snaker/Snaker/Base.lproj/Snaker.storyboard; sourceTree = "<group>"; };
+		40F9116F2031DCD1009F6961 /* SnakerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SnakerViewController.swift; sourceTree = "<group>"; };
+		40F911712031DCFC009F6961 /* s sound.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = "s sound.m4a"; sourceTree = "<group>"; };
 		99AF6558202DAE7900F49A3E /* loscodershermanos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = loscodershermanos.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		99AF655B202DAE7900F49A3E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		99AF655D202DAE7900F49A3E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -67,9 +71,7 @@
 		99AF658E202DB0A100F49A3E /* CardGame.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CardGame.storyboard; sourceTree = "<group>"; };
 		99AF6591202DB0F600F49A3E /* NoWordGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoWordGenerator.swift; sourceTree = "<group>"; };
 		99AF6593202DB11500F49A3E /* CardGame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardGame.swift; sourceTree = "<group>"; };
-		99AF6595202DB12C00F49A3E /* Snaker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Snaker.swift; sourceTree = "<group>"; };
 		99AF6597202DB14B00F49A3E /* Snaker.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Snaker.sks; sourceTree = "<group>"; };
-		99AF6599202DB17000F49A3E /* Snaker.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Snaker.storyboard; sourceTree = "<group>"; };
 		99AF659D202DD9EE00F49A3E /* dizionario.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = dizionario.txt; sourceTree = "<group>"; };
 		99AF659F202E351C00F49A3E /* MemoSound.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MemoSound.storyboard; sourceTree = "<group>"; };
 		99AF65A1202E352800F49A3E /* MemoSoundViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoSoundViewController.swift; sourceTree = "<group>"; };
@@ -181,8 +183,9 @@
 		99AF659C202DB1A200F49A3E /* StoryBoards */ = {
 			isa = PBXGroup;
 			children = (
-				99AF6599202DB17000F49A3E /* Snaker.storyboard */,
 				99AF658C202DB08B00F49A3E /* NoWordGenerator.storyboard */,
+				40F9116C2031DC8D009F6961 /* Snaker.storyboard */,
+				40F911712031DCFC009F6961 /* s sound.m4a */,
 				99AF658E202DB0A100F49A3E /* CardGame.storyboard */,
 				99AF655F202DAE7900F49A3E /* Main.storyboard */,
 				99AF659F202E351C00F49A3E /* MemoSound.storyboard */,
@@ -193,9 +196,9 @@
 		99AF65A3202E355300F49A3E /* GamesController */ = {
 			isa = PBXGroup;
 			children = (
-				99AF6595202DB12C00F49A3E /* Snaker.swift */,
 				99AF6593202DB11500F49A3E /* CardGame.swift */,
 				99AF6591202DB0F600F49A3E /* NoWordGenerator.swift */,
+				40F9116F2031DCD1009F6961 /* SnakerViewController.swift */,
 				99AF65A1202E352800F49A3E /* MemoSoundViewController.swift */,
 			);
 			name = GamesController;
@@ -320,16 +323,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				99AF65AB202E3A2500F49A3E /* 2.wav in Resources */,
+				40F911722031DCFC009F6961 /* s sound.m4a in Resources */,
 				99AF65A9202E3A2500F49A3E /* 4.wav in Resources */,
 				99AF659E202DD9EE00F49A3E /* dizionario.txt in Resources */,
 				99AF658F202DB0A100F49A3E /* CardGame.storyboard in Resources */,
+				40F9116E2031DC8D009F6961 /* Snaker.storyboard in Resources */,
 				99AF6569202DAE7900F49A3E /* LaunchScreen.storyboard in Resources */,
 				99AF65A0202E351C00F49A3E /* MemoSound.storyboard in Resources */,
 				99AF658D202DB08B00F49A3E /* NoWordGenerator.storyboard in Resources */,
 				99AF65AA202E3A2500F49A3E /* 1.wav in Resources */,
 				99AF6566202DAE7900F49A3E /* Assets.xcassets in Resources */,
 				99AF65A8202E3A2500F49A3E /* 3.wav in Resources */,
-				99AF659A202DB17000F49A3E /* Snaker.storyboard in Resources */,
 				99AF6561202DAE7900F49A3E /* Main.storyboard in Resources */,
 				99AF6598202DB14B00F49A3E /* Snaker.sks in Resources */,
 			);
@@ -356,11 +360,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				40F911702031DCD1009F6961 /* SnakerViewController.swift in Sources */,
 				99AF6592202DB0F600F49A3E /* NoWordGenerator.swift in Sources */,
 				99AF655E202DAE7900F49A3E /* ViewController.swift in Sources */,
 				99AF6564202DAE7900F49A3E /* loscodershermanos.xcdatamodeld in Sources */,
 				99AF65A2202E352800F49A3E /* MemoSoundViewController.swift in Sources */,
-				99AF6596202DB12C00F49A3E /* Snaker.swift in Sources */,
 				99AF655C202DAE7900F49A3E /* AppDelegate.swift in Sources */,
 				99AF6594202DB11500F49A3E /* CardGame.swift in Sources */,
 			);
@@ -398,6 +402,14 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		40F9116C2031DC8D009F6961 /* Snaker.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				40F9116D2031DC8D009F6961 /* Base */,
+			);
+			name = Snaker.storyboard;
+			sourceTree = "<group>";
+		};
 		99AF655F202DAE7900F49A3E /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
