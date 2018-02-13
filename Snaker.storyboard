@@ -23,11 +23,11 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fdi-ZX-dgi">
-                                <rect key="frame" x="77" y="291" width="260" height="142"/>
+                                <rect key="frame" x="85" y="291" width="252" height="135"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="serpente.png" translatesAutoresizingMaskIntoConstraints="NO" id="JUV-97-NZb">
-                                        <rect key="frame" x="20" y="0.0" width="240" height="128"/>
+                                        <rect key="frame" x="6" y="-1" width="240" height="128"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
                                 </subviews>
