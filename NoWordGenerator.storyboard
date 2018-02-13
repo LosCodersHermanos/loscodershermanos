@@ -31,9 +31,6 @@
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="161"/>
                                 <textInputTraits key="textInputTraits"/>
-                                <connections>
-                                    <action selector="fonemaInizialeTextField:" destination="mmk-tj-BpK" eventType="editingDidEnd" id="a9O-rS-cHf"/>
-                                </connections>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Emb-Ye-Rs3">
                                 <rect key="frame" x="37" y="559" width="389" height="209"/>

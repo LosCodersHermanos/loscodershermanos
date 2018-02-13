@@ -81,21 +81,37 @@ class NoWordGenerator: UIViewController {
     
     
     @IBAction func generationStart(_ sender: Any) {
-        generazione()
-        generationAndCheck()
+        
+            generazione()
+        
+           // generationAndCheck()
+            
         
         
         // var w = lunghezzaSlider.value
         
     }
     func generazione()-> String {
+        
+        print("Aaaaaaaaaaaaaaa \(fonemaIniziale.text)")
+        let c = fonemaIniziale.text?.isEmpty
+        print("rrrrrrrrrrrrrrr \(c)")
+        
+        
+        
         if  (fonemaIniziale.text?.isEmpty)! {
             let alert = UIAlertController(title: "Attenzione", message: "Inserisci un Fonema" ,preferredStyle: .alert)
             let okAction = UIAlertAction(title: "Ok" , style: .default)
             present(alert, animated: true)
             alert.addAction(okAction)
             
+            
+            
         } else {
+        
+        
+        
+        
             let MAX : UInt32 = 13
             let random_number1 = Int(arc4random_uniform(MAX))
             let random_number3 = Int(arc4random_uniform(MAX))
@@ -132,6 +148,9 @@ class NoWordGenerator: UIViewController {
             fonemaInizialeLegth = (fonemaIniziale.text?.count)!
             let fChar = fonemaIniziale.text?.first
             let lastChar = fonemaIniziale.text?.last
+            
+          
+            
             
             
             if position == 2 {
@@ -223,9 +242,9 @@ class NoWordGenerator: UIViewController {
                 }
                 
             }
-            
+            generationAndCheck()
+       //}
         }
-        
         return parolaGenerata.text!
         
     }
