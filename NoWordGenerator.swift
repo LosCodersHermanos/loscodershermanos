@@ -93,22 +93,23 @@ class NoWordGenerator: UIViewController {
     }
     func generazione()-> String {
         
-        print("Aaaaaaaaaaaaaaa \(fonemaIniziale.text)")
-        let c = fonemaIniziale.text?.isEmpty
-        print("rrrrrrrrrrrrrrr \(c)")
-        
-        
-        
+       fonemaInizialeLegth = (fonemaIniziale.text?.count)!
         if  (fonemaIniziale.text?.isEmpty)! {
-            let alert = UIAlertController(title: "Attenzione", message: "Inserisci un Fonema" ,preferredStyle: .alert)
-            let okAction = UIAlertAction(title: "Ok" , style: .default)
+            let alert = UIAlertController(title: "Attenzione", message: "Inserisci un fonema" ,preferredStyle: .alert)
+            let okAction = UIAlertAction(title: "OK" , style: .default)
             present(alert, animated: true)
             alert.addAction(okAction)
             
             
             
         } else {
-        
+            
+            if  fonemaInizialeLegth == characterNumber  {
+                let alert = UIAlertController(title: "Attenzione", message: "Controlla la lunghezza della parola" ,preferredStyle: .alert)
+                let okAction = UIAlertAction(title: "OK" , style: .default)
+                present(alert, animated: true)
+                alert.addAction(okAction)
+            } else {
         
         
         
@@ -244,7 +245,7 @@ class NoWordGenerator: UIViewController {
             }
             generationAndCheck()
        //}
-        }
+            }}
         return parolaGenerata.text!
         
     }
