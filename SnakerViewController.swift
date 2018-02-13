@@ -11,8 +11,13 @@ import AVFoundation
 
 class SnakerViewController: UIViewController, AVAudioPlayerDelegate {
     
-    // outlet della view
+    
+    
+   
     @IBOutlet weak var snake: UIView!
+    
+    
+    
     
     
     var snakePlayer: AVAudioPlayer!
