@@ -12,6 +12,8 @@
 		40F9116E2031DC8D009F6961 /* (null) in Resources */ = {isa = PBXBuildFile; };
 		40F911702031DCD1009F6961 /* SnakerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40F9116F2031DCD1009F6961 /* SnakerViewController.swift */; };
 		40F911722031DCFC009F6961 /* s sound.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 40F911712031DCFC009F6961 /* s sound.m4a */; };
+		6F6CD92E203356B500BABC3F /* ShowNoWordsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F6CD92D203356B500BABC3F /* ShowNoWordsViewController.swift */; };
+		6F6CD9302033572B00BABC3F /* ShowNoWords.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6F6CD92F2033572B00BABC3F /* ShowNoWords.storyboard */; };
 		99AF655C202DAE7900F49A3E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99AF655B202DAE7900F49A3E /* AppDelegate.swift */; };
 		99AF655E202DAE7900F49A3E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99AF655D202DAE7900F49A3E /* ViewController.swift */; };
 		99AF6561202DAE7900F49A3E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 99AF655F202DAE7900F49A3E /* Main.storyboard */; };
@@ -56,6 +58,8 @@
 		400B9C63203341C100C291A6 /* Snaker.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Snaker.storyboard; sourceTree = "<group>"; };
 		40F9116F2031DCD1009F6961 /* SnakerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SnakerViewController.swift; sourceTree = "<group>"; };
 		40F911712031DCFC009F6961 /* s sound.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = "s sound.m4a"; sourceTree = "<group>"; };
+		6F6CD92D203356B500BABC3F /* ShowNoWordsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowNoWordsViewController.swift; sourceTree = "<group>"; };
+		6F6CD92F2033572B00BABC3F /* ShowNoWords.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ShowNoWords.storyboard; sourceTree = "<group>"; };
 		99AF6558202DAE7900F49A3E /* loscodershermanos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = loscodershermanos.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		99AF655B202DAE7900F49A3E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		99AF655D202DAE7900F49A3E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -193,6 +197,7 @@
 				400B9C63203341C100C291A6 /* Snaker.storyboard */,
 				99AF655F202DAE7900F49A3E /* Main.storyboard */,
 				99AF659F202E351C00F49A3E /* MemoSound.storyboard */,
+				6F6CD92F2033572B00BABC3F /* ShowNoWords.storyboard */,
 			);
 			name = StoryBoards;
 			sourceTree = "<group>";
@@ -204,6 +209,7 @@
 				99AF6591202DB0F600F49A3E /* NoWordGenerator.swift */,
 				40F9116F2031DCD1009F6961 /* SnakerViewController.swift */,
 				99AF65A1202E352800F49A3E /* MemoSoundViewController.swift */,
+				6F6CD92D203356B500BABC3F /* ShowNoWordsViewController.swift */,
 			);
 			name = GamesController;
 			sourceTree = "<group>";
@@ -336,6 +342,7 @@
 				99AF6569202DAE7900F49A3E /* LaunchScreen.storyboard in Resources */,
 				99AF65A0202E351C00F49A3E /* MemoSound.storyboard in Resources */,
 				99AF658D202DB08B00F49A3E /* NoWordGenerator.storyboard in Resources */,
+				6F6CD9302033572B00BABC3F /* ShowNoWords.storyboard in Resources */,
 				99AF65AA202E3A2500F49A3E /* 1.wav in Resources */,
 				99AF6566202DAE7900F49A3E /* Assets.xcassets in Resources */,
 				400B9C64203341C100C291A6 /* Snaker.storyboard in Resources */,
@@ -372,6 +379,7 @@
 				99AF6564202DAE7900F49A3E /* loscodershermanos.xcdatamodeld in Sources */,
 				99AF65A2202E352800F49A3E /* MemoSoundViewController.swift in Sources */,
 				99AF655C202DAE7900F49A3E /* AppDelegate.swift in Sources */,
+				6F6CD92E203356B500BABC3F /* ShowNoWordsViewController.swift in Sources */,
 				99AF6594202DB11500F49A3E /* CardGame.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

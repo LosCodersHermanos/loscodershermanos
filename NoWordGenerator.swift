@@ -56,6 +56,31 @@ class NoWordGenerator: UIViewController {
     @IBOutlet weak var centroLabel: UILabel!
     @IBOutlet weak var fineLabel: UILabel!
     
+    
+    @IBAction func playButton(_ sender: Any) {
+        
+        if parolaGenerata.text != "" {
+            performSegue(withIdentifier: "segue", sender: self)
+        }
+    }
+    
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        var showNoWord = segue.destination as! ShowNoWordsViewController
+        
+        showNoWord.word = parolaGenerata.text!
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -112,6 +137,8 @@ class NoWordGenerator: UIViewController {
             } else {
         
         
+                
+                
         
             let MAX : UInt32 = 13
             let random_number1 = Int(arc4random_uniform(MAX))
