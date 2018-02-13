@@ -406,14 +406,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		40F9116C2031DC8D009F6961 /* Snaker.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				40F9116D2031DC8D009F6961 /* Base */,
-			);
-			name = Snaker.storyboard;
-			sourceTree = "<group>";
-		};
 		99AF655F202DAE7900F49A3E /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -545,7 +537,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 3H85PPY5GT;
+				DEVELOPMENT_TEAM = C9P52MWDUP;
 				INFOPLIST_FILE = loscodershermanos/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = LuigiScherillo.loscodershermanos;
@@ -560,7 +552,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 3H85PPY5GT;
+				DEVELOPMENT_TEAM = C9P52MWDUP;
 				INFOPLIST_FILE = loscodershermanos/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = LuigiScherillo.loscodershermanos;
