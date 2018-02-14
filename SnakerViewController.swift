@@ -13,6 +13,7 @@ class SnakerViewController: UIViewController, AVAudioPlayerDelegate {
     
     
     
+    
    
     @IBOutlet weak var snake: UIView!
     
@@ -104,12 +105,10 @@ class SnakerViewController: UIViewController, AVAudioPlayerDelegate {
     
     
     @objc func viewDidDragged() {
-        var newPoint = panGesture.location(in: self.view)
-        if newPoint. {
+        let newPoint = panGesture.location(in: self.view)
         snakePlayer.play()
-        } else {
-            snakePlayer.stop()
-        }
+        
+    
         
         
         
@@ -120,7 +119,6 @@ class SnakerViewController: UIViewController, AVAudioPlayerDelegate {
         
         
        let newFrame = CGRectMake(newPoint.x, newPoint.y, snake.frame.size.width, snake.frame.size.height)
-        
         snake.frame = newFrame
         
 
