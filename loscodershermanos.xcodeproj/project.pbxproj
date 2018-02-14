@@ -547,7 +547,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = C9P52MWDUP;
+				DEVELOPMENT_TEAM = 2P7Y8V53M5;
 				INFOPLIST_FILE = loscodershermanos/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = LuigiScherillo.loscodershermanos;
@@ -562,7 +562,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = C9P52MWDUP;
+				DEVELOPMENT_TEAM = 2P7Y8V53M5;
 				INFOPLIST_FILE = loscodershermanos/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = LuigiScherillo.loscodershermanos;

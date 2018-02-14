@@ -68,6 +68,8 @@ class SnakerViewController: UIViewController, AVAudioPlayerDelegate {
         snakePlayer.numberOfLoops = 0
     }
     
+    // func
+    
     
     
 //    @IBAction func handlePan(_ sender: UIPanGestureRecognizer) {
@@ -90,7 +92,7 @@ class SnakerViewController: UIViewController, AVAudioPlayerDelegate {
     
     @IBOutlet weak var mushroom: UIImageView!
     func animate(_ image: UIImageView) {
-        UIView.animate(withDuration: 5, delay: 0, options: .curveLinear, animations: {
+        UIView.animate(withDuration: 5, delay: 0, options: .curveEaseIn, animations: {
             image.transform = CGAffineTransform(translationX: -100, y: 0)
         }) { (success: Bool) in
             image.transform = CGAffineTransform.identity
@@ -102,9 +104,12 @@ class SnakerViewController: UIViewController, AVAudioPlayerDelegate {
     
     
     @objc func viewDidDragged() {
-        let newPoint = panGesture.location(in: self.view)
+        var newPoint = panGesture.location(in: self.view)
+        if newPoint. {
         snakePlayer.play()
-    
+        } else {
+            snakePlayer.stop()
+        }
         
         
         
