@@ -24,12 +24,13 @@ class MemoSoundViewController: UIViewController,AVAudioPlayerDelegate {
     var readyForUser = false
     var level = 1
     
-    
+    var canPlay = false
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
         setUpAudioFiles()
+
     }
 
     override func didReceiveMemoryWarning() {
@@ -71,53 +72,73 @@ class MemoSoundViewController: UIViewController,AVAudioPlayerDelegate {
     }
     
     @IBAction func soundButtonPressed(_ sender: Any) {
+
         if readyForUser{
             let button = sender as! UIButton
+
             switch button.tag {
             case 1:
-                highLightButton(tag: 1)
+
+                button.isHighlighted = true
                 sound1Player.play()
                 checkCorrectly(buttonPressed: 1)
+                button.isHighlighted = false
+
                 break
+                
             case 2:
-                highLightButton(tag: 2)
+
+                button.isHighlighted = true
                 sound2Player.play()
                 checkCorrectly(buttonPressed: 2)
+                button.isHighlighted = false
                 break
             case 3:
-                highLightButton(tag: 3)
+
+                button.isHighlighted = true
                 sound3Player.play()
                 checkCorrectly(buttonPressed: 3)
+                button.isHighlighted = false
                 break
             case 4:
-                highLightButton(tag: 4)
+
+                button.isHighlighted = true
                 sound4Player.play()
                 checkCorrectly(buttonPressed: 4)
+                button.isHighlighted = false
                 break
             default:
                 break
             }
+
         }
 
     }
+    
     func checkCorrectly (buttonPressed:Int){
-        if buttonPressed == playlist[numberOfTap]{
+        if playlist.count != 0{
+            
+        
+        if buttonPressed == playlist[numberOfTap] {
             if numberOfTap == playlist.count - 1 {
-                
-                let currentTime = DispatchTime.now()
-                
-                let deadline = DispatchTime(uptimeNanoseconds: currentTime.uptimeNanoseconds + 100000000)
-                
-                DispatchQueue.main.asyncAfter(deadline: deadline , execute: {
+                DispatchQueue.main.asyncAfter(deadline: .now() + 0.10) {
                     self.nextRound()
-                    
-                })
-                return
+                }
+//                let currentTime = DispatchTime.now()
+//
+//                let deadline = DispatchTime(uptimeNanoseconds: currentTime.uptimeNanoseconds + 100000000)
+//
+//                DispatchQueue.main.asyncAfter(deadline: deadline , execute: {
+//                    self.nextRound()
+//
+//                })
+//                return
             }
             numberOfTap += 1
         }else {
             resetGame()
         }
+    }
     }
     func resetGame(){
         level = 1
@@ -130,6 +151,8 @@ class MemoSoundViewController: UIViewController,AVAudioPlayerDelegate {
         playButton.isHidden = false
     }
     func nextRound () {
+        sleep(1)
+
          level += 1
          label.text = " Livello \(level)"
         readyForUser = false
@@ -137,7 +160,7 @@ class MemoSoundViewController: UIViewController,AVAudioPlayerDelegate {
         currentItem = 0
         let randomNumber = Int(arc4random_uniform(4) + 1)
         playlist.append(randomNumber)
-        playNextItem()
+//        playNextItem()
         disableButtons()
     }
     
@@ -147,7 +170,9 @@ class MemoSoundViewController: UIViewController,AVAudioPlayerDelegate {
        
         let randomNumber = Int(arc4random_uniform(4) + 1 )
         playlist.append(randomNumber)
+
          playNextItem()
+
         playButton.isHidden = true
 //        playNextItem()
     }
@@ -156,9 +181,10 @@ class MemoSoundViewController: UIViewController,AVAudioPlayerDelegate {
         
     func audioPlayerDidFinishPlaying(_ player: AVAudioPlayer, successfully flag: Bool )  {
             
-            
+        
             if currentItem <= playlist.count - 1 {
                 playNextItem()
+
             } else {
                 readyForUser = true
                 resetButtonHighLight()
@@ -169,23 +195,27 @@ class MemoSoundViewController: UIViewController,AVAudioPlayerDelegate {
         }
         func playNextItem () {
             let selectedItem = playlist[currentItem]
-            
             switch selectedItem {
             case 1:
                 highLightButton(tag: 0)
                 sound1Player.play()
+                
+
                 break
             case 2:
                 highLightButton(tag: 1)
                 sound2Player.play()
+
                 break
             case 3:
                 highLightButton(tag: 2)
                 sound3Player.play()
+
                 break
             case 4:
                 highLightButton(tag: 3)
                 sound4Player.play()
+
                 break
             default:
                 break
@@ -200,7 +230,7 @@ class MemoSoundViewController: UIViewController,AVAudioPlayerDelegate {
         }
         func highLightButton(tag:Int ){
             switch tag {
-                
+
             case 0:
             soundButton[0].setImage(#imageLiteral(resourceName: "redPressed"), for: .normal)
             case 1:
@@ -212,7 +242,7 @@ class MemoSoundViewController: UIViewController,AVAudioPlayerDelegate {
             default:
                 break
             }
-//
+// ahjahajhjashjashashkshksahasjkhasj
 //
 //            switch tag {
 //            case 1:
@@ -233,7 +263,7 @@ class MemoSoundViewController: UIViewController,AVAudioPlayerDelegate {
 //
 //            default:
 //                break
-//            }
+//            } hakjshaskjhaskjahskjsahkjashkashkjashksahjksahkjsahkjsa
         }
     func disableButtons() {
         for button in soundButton {
@@ -247,6 +277,5 @@ class MemoSoundViewController: UIViewController,AVAudioPlayerDelegate {
             
     }
     }
-
 }
 

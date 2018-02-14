@@ -19,36 +19,40 @@
                         <rect key="frame" x="0.0" y="0.0" width="1112" height="834"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" tag="3" contentMode="scaleToFill" horizontalHuggingPriority="249" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pCZ-gU-fi5">
+                            <button opaque="NO" tag="3" contentMode="scaleToFill" horizontalHuggingPriority="249" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pCZ-gU-fi5" userLabel="Blue">
                                 <rect key="frame" x="638" y="540" width="113" height="110"/>
                                 <color key="tintColor" white="1" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" image="blue">
                                     <color key="titleColor" white="1" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <state key="highlighted" image="bluePressed"/>
                                 <connections>
                                     <action selector="soundButtonPressed:" destination="cUd-pf-dG9" eventType="touchUpInside" id="768-Ty-udv"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" tag="4" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6S4-hV-TGR">
+                            <button opaque="NO" tag="4" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6S4-hV-TGR" userLabel="Green">
                                 <rect key="frame" x="513" y="540" width="120" height="110"/>
                                 <color key="tintColor" white="1" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" image="green"/>
+                                <state key="highlighted" image="greenPressed"/>
                                 <connections>
                                     <action selector="soundButtonPressed:" destination="cUd-pf-dG9" eventType="touchUpInside" id="4O9-ze-nLq"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" tag="1" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r0y-WH-Zak">
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r0y-WH-Zak" userLabel="Red">
                                 <rect key="frame" x="513" y="421" width="120" height="107"/>
                                 <color key="tintColor" white="1" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" image="red"/>
+                                <state key="highlighted" image="redPressed"/>
                                 <connections>
                                     <action selector="soundButtonPressed:" destination="cUd-pf-dG9" eventType="touchUpInside" id="wtb-BY-Iy4"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" tag="2" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GZd-1n-TGX">
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GZd-1n-TGX" userLabel="Yellow">
                                 <rect key="frame" x="641" y="421" width="110" height="107"/>
                                 <color key="tintColor" white="1" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" image="yellow"/>
+                                <state key="highlighted" image="yellowPressed"/>
                                 <connections>
                                     <action selector="soundButtonPressed:" destination="cUd-pf-dG9" eventType="touchUpInside" id="abv-UT-1e0"/>
                                 </connections>
@@ -111,9 +115,13 @@
     </scenes>
     <resources>
         <image name="blue" width="166" height="166"/>
+        <image name="bluePressed" width="166" height="166"/>
         <image name="green" width="165" height="166"/>
+        <image name="greenPressed" width="165" height="166"/>
         <image name="play" width="88" height="88"/>
         <image name="red" width="165" height="165"/>
+        <image name="redPressed" width="165" height="165"/>
         <image name="yellow" width="166" height="165"/>
+        <image name="yellowPressed" width="166" height="165"/>
     </resources>
 </document>
