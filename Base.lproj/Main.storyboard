@@ -36,6 +36,21 @@
                                     <segue destination="rcf-bO-3Nf" kind="show" id="6AZ-kJ-woH"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tgb-PP-7bw">
+                                <rect key="frame" x="69" y="543" width="313" height="196"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                <state key="normal" title="Serpente"/>
+                                <connections>
+                                    <segue destination="ODx-Id-uf6" kind="show" id="eu6-FZ-mJ4"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ssw-PK-gzS">
+                                <rect key="frame" x="697" y="529" width="323" height="210"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="43"/>
+                                <state key="normal" title="Carte"/>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -60,6 +75,22 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="myJ-Ca-OhQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="640" y="203"/>
+        </scene>
+        <!--CardGame-->
+        <scene sceneID="MFl-sU-P5m">
+            <objects>
+                <viewControllerPlaceholder storyboardName="CardGame" id="G6I-S6-LB2" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KcC-wS-EPk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="646" y="375"/>
+        </scene>
+        <!--Snaker-->
+        <scene sceneID="nQZ-51-F4m">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Snaker" id="ODx-Id-uf6" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LSY-b8-bfv" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="660" y="549"/>
         </scene>
     </scenes>
 </document>

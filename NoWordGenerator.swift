@@ -57,9 +57,16 @@ class NoWordGenerator: UIViewController {
     @IBOutlet weak var fineLabel: UILabel!
     
     
+    
+    
+    
+    
     @IBAction func playButton(_ sender: Any) {
         
-        if parolaGenerata.text != "" {
+        
+        
+        
+        if parolaGenerata.text! != "" {
             performSegue(withIdentifier: "segue", sender: self)
         }
     }
