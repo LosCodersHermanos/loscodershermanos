@@ -137,27 +137,27 @@ class NoWordGenerator: UIViewController {
             
                 func inizioVocale() {
                     parolaGenerata.text = fonemaIniziale.text! + l1 + l2 + l3 + l4 + l5 + l6 + l7 + l8 + l9 + l10
-
+                    fonemaIniziale.textColor = UIColor.red
                 }
                 func inizioConsonante (){
                     parolaGenerata.text = fonemaIniziale.text! + l2 + l3 +  l4 + l5 + l6 + l7 + l8 + l9 + l10 + l1
-
+fonemaIniziale.textColor = UIColor.red
                 }
             func inizioVocaleCentro(){
-                parolaGenerata.text = l11 + fonemaIniziale.text! + l1 + l2 + l3 + l4 + l5 + l6 + l7 + l8 + l9 + l10
-
+                parolaGenerata.text = l11 + l1 + fonemaIniziale.text!  + l2 + l3 + l4 + l5 + l6 + l7 + l8 + l9 + l10
+                fonemaIniziale.textColor = UIColor.red
             }
             func inizioConsonanteCentro(){
-                parolaGenerata.text = l11 + fonemaIniziale.text! + l2 + l3 +  l4 + l5 + l6 + l7 + l8 + l9 + l10 + l1
-
+                parolaGenerata.text = l11 + l2 + fonemaIniziale.text! + l3 +  l4 + l5  + l6 + l7 + l8 + l9 + l10 + l1
+fonemaIniziale.textColor = UIColor.red
             }
             func inizioVocaleFine(){
                 parolaGenerata.text = l2 + l3 +  l4 + l5 + l6 + l7 + l8 + l9 + l10 + l1 + l11 + fonemaIniziale.text!
-
+fonemaIniziale.textColor = UIColor.red
             }
             func inizioConsonanteFine(){
                 parolaGenerata.text =  l2 + l3 +  l4 + l5 + l6 + l7 + l8 + l9 + l10 + l1 + l11 + fonemaIniziale.text!
-
+fonemaIniziale.textColor = UIColor.red
             }
             
             if position == 2 {
@@ -274,7 +274,7 @@ class NoWordGenerator: UIViewController {
         parolaGenerata.text?.removeFirst(differenza)
     }
     func generationIniziale() {
-           differenza = 12 - characterNumber
+           differenza = 13 - characterNumber
         parolaGenerata.text?.removeLast(differenza)
     }
     func generationCentro() {
