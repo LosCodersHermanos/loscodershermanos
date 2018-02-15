@@ -13,6 +13,7 @@ class NoWordGenerator: UIViewController {
     var characterNumber : Int = 3
     var position = 1
     var fonemaInizialeLegth = 0
+    var totale : Int = 0
 
     @IBOutlet weak var fonemaIniziale: UITextField!
     @IBOutlet weak var parolaGenerata: UILabel!
@@ -134,32 +135,59 @@ class NoWordGenerator: UIViewController {
             fonemaInizialeLegth = (fonemaIniziale.text?.count)!
             let fChar = fonemaIniziale.text?.first
             let lastChar = fonemaIniziale.text?.last
-            
                 func inizioVocale() {
-                    parolaGenerata.text = fonemaIniziale.text! + l1 + l2 + l3 + l4 + l5 + l6 + l7 + l8 + l9 + l10
+                    parolaGenerata.text = fonemaIniziale.text! + l1 + l2 + l3 + l4 + l5 + l6 + l7 + l8 + l9
                     fonemaIniziale.textColor = UIColor.red
+                    let tot = (parolaGenerata.text?.count)! + fonemaInizialeLegth
+                    print(tot)
+
+                    totale = tot
                 }
                 func inizioConsonante (){
-                    parolaGenerata.text = fonemaIniziale.text! + l2 + l3 +  l4 + l5 + l6 + l7 + l8 + l9 + l10 + l1
+                    parolaGenerata.text = fonemaIniziale.text! + l2 + l3 +  l4 + l5 + l6 + l7 + l8 + l9 + l10
 fonemaIniziale.textColor = UIColor.red
+                    let tot = (parolaGenerata.text?.count)! + fonemaInizialeLegth
+                    print(tot)
+
+                    totale = tot
+
                 }
             func inizioVocaleCentro(){
-                parolaGenerata.text = l11 + l1 + fonemaIniziale.text!  + l2 + l3 + l4 + l5 + l6 + l7 + l8 + l9 + l10
+                parolaGenerata.text = l11 + l1 + fonemaIniziale.text!  + l2 + l3 + l4 + l5 + l6 + l7 + l8
                 fonemaIniziale.textColor = UIColor.red
+                let tot = (parolaGenerata.text?.count)! + fonemaInizialeLegth
+                print(tot)
+
+                totale = tot
+
             }
             func inizioConsonanteCentro(){
-                parolaGenerata.text = l11 + l2 + fonemaIniziale.text! + l3 +  l4 + l5  + l6 + l7 + l8 + l9 + l10 + l1
+                parolaGenerata.text = l11 + l2 + fonemaIniziale.text! + l3 +  l4 + l5  + l6 + l7 + l8 + l9
 fonemaIniziale.textColor = UIColor.red
+                let tot = (parolaGenerata.text?.count)! + fonemaInizialeLegth
+                print(tot)
+
+                totale = tot
+
             }
             func inizioVocaleFine(){
-                parolaGenerata.text = l2 + l3 +  l4 + l5 + l6 + l7 + l8 + l9 + l10 + l1 + l11 + fonemaIniziale.text!
+                parolaGenerata.text = l2 + l3 +  l4 + l5 + l6 + l7 + l8 + l9 + l10 + fonemaIniziale.text!
 fonemaIniziale.textColor = UIColor.red
+                let tot = (parolaGenerata.text?.count)! + fonemaInizialeLegth
+                print(tot)
+                totale = tot
+
             }
             func inizioConsonanteFine(){
-                parolaGenerata.text =  l2 + l3 +  l4 + l5 + l6 + l7 + l8 + l9 + l10 + l1 + l11 + fonemaIniziale.text!
+                parolaGenerata.text =  l2 + l3 +  l4 + l5 + l6 + l7 + l8 + l9 + l11 + fonemaIniziale.text!
+                
+                let tot = (parolaGenerata.text?.count)! + fonemaInizialeLegth
+                print(tot)
+
+                totale = tot
+
 fonemaIniziale.textColor = UIColor.red
             }
-            
             if position == 2 {
                 //controlla se il fonema inserito è lungo  uno o due caratteri in meno alla lunghezza della parola lo centra meglio
                 if fonemaInizialeLegth == characterNumber - 1 || fonemaInizialeLegth == characterNumber - 2 {
@@ -224,7 +252,6 @@ fonemaIniziale.textColor = UIColor.red
 //                    generationAndCheck()
                 }
             } else {
-                
                 if vocali.contains("\(fChar!)"){
                     inizioVocaleFine()
                     generationFinale ()
@@ -234,51 +261,25 @@ fonemaIniziale.textColor = UIColor.red
                 }
                 
             }
-            
-       //}
             }}
         return parolaGenerata.text!
     }
-    func generationAndCheck() -> String  {
-        let str = parolaGenerata.text!
-        let index = str.index(str.startIndex , offsetBy: characterNumber)
-        var trimStr = str.substring(to: index)
-        
-        
-        var parole: String = ""
-        if let filepath = Bundle.main.path(forResource: "dizionario", ofType: "txt") {
-            do {
-                parole = try String(contentsOfFile: filepath)
-                print(trimStr)
-            } catch {
-
-                while parole.contains(trimStr){
-                    print(trimStr)
-                    trimStr = " "
-                    
-                    self.generazione()
-                    self.generationAndCheck()
-                    parolaGenerata.text = trimStr
-                    parolaGenerata.isHidden = true
-                    
-                }
-            }
-            parolaGenerata.text = trimStr
-            return trimStr
-        }
-        return trimStr
-    }
     func generationFinale (){
 //        Questo serve nei casi in cui la generazione debba esser fatta con il fonema alla fine.
-   differenza = 13 - characterNumber
+        differenza = (totale) - characterNumber - fonemaInizialeLegth
+        print("La differenza è di: " , differenza)
+
         parolaGenerata.text?.removeFirst(differenza)
     }
     func generationIniziale() {
-           differenza = 13 - characterNumber
+           differenza = (totale) - characterNumber - fonemaInizialeLegth
+        print("La differenza è di: " , differenza)
         parolaGenerata.text?.removeLast(differenza)
     }
     func generationCentro() {
-        differenza = 13 - characterNumber
+        differenza = (totale ) - characterNumber - fonemaInizialeLegth
+        print("La differenza è di: " , differenza)
+
         parolaGenerata.text?.removeLast(differenza)
     }
 }
