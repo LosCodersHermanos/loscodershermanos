@@ -13,6 +13,7 @@ class SnakerViewController: UIViewController, AVAudioPlayerDelegate {
     
     
     
+    
    
     @IBOutlet weak var snake: UIView!
     
@@ -28,7 +29,7 @@ class SnakerViewController: UIViewController, AVAudioPlayerDelegate {
     var level = 1
     
     
-    
+    var tapGesture = UITapGestureRecognizer()
     var panGesture = UIPanGestureRecognizer()
     
 
@@ -37,15 +38,20 @@ class SnakerViewController: UIViewController, AVAudioPlayerDelegate {
         // Do any additional setup after loading the view, typically from a nib.
         
         panGesture = UIPanGestureRecognizer.init(target: self, action: #selector(viewDidDragged))
-        
+        tapGesture = UITapGestureRecognizer.init(target: self, action: #selector(singleTap(gesture:)))
         snake.addGestureRecognizer(panGesture)
-        
+        snake.addGestureRecognizer(tapGesture)
         
         setUpAudioFiles()
         animate(mushroom)
         
     }
-
+    @objc func singleTap(gesture: UIGestureRecognizer){
+print("ok")
+        if tapGesture.state == .ended {
+            snakePlayer.stop()
+        }
+    }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -67,6 +73,8 @@ class SnakerViewController: UIViewController, AVAudioPlayerDelegate {
         
         snakePlayer.numberOfLoops = 0
     }
+    
+    // func
     
     
     
@@ -90,7 +98,7 @@ class SnakerViewController: UIViewController, AVAudioPlayerDelegate {
     
     @IBOutlet weak var mushroom: UIImageView!
     func animate(_ image: UIImageView) {
-        UIView.animate(withDuration: 5, delay: 0, options: .curveLinear, animations: {
+        UIView.animate(withDuration: 5, delay: 0, options: .curveEaseIn, animations: {
             image.transform = CGAffineTransform(translationX: -100, y: 0)
         }) { (success: Bool) in
             image.transform = CGAffineTransform.identity
@@ -102,8 +110,16 @@ class SnakerViewController: UIViewController, AVAudioPlayerDelegate {
     
     
     @objc func viewDidDragged() {
+        
+        if panGesture.state == .began{
+            snakePlayer.play()
+            
+        }else if panGesture.state == .ended{
+            snakePlayer.stop()
+        }
         let newPoint = panGesture.location(in: self.view)
-        snakePlayer.play()
+
+        
     
         
         
@@ -115,11 +131,10 @@ class SnakerViewController: UIViewController, AVAudioPlayerDelegate {
         
         
        let newFrame = CGRectMake(newPoint.x, newPoint.y, snake.frame.size.width, snake.frame.size.height)
-        
         snake.frame = newFrame
         
-
-    }
+        }
+    
     
     
     
@@ -140,8 +155,7 @@ class SnakerViewController: UIViewController, AVAudioPlayerDelegate {
 //    }
 
 
-    
-    
+
     
 
 }
