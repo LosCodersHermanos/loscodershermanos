@@ -9,10 +9,11 @@
 import UIKit
 
 class NoWordGenerator: UIViewController {
+    var differenza: Int = 0
     var characterNumber : Int = 3
     var position = 1
     var fonemaInizialeLegth = 0
-    
+
     @IBOutlet weak var fonemaIniziale: UITextField!
     @IBOutlet weak var parolaGenerata: UILabel!
     
@@ -55,73 +56,33 @@ class NoWordGenerator: UIViewController {
     @IBOutlet weak var inizioLabel: UILabel!
     @IBOutlet weak var centroLabel: UILabel!
     @IBOutlet weak var fineLabel: UILabel!
-    
-    
-    
-    
-    
-    
     @IBAction func playButton(_ sender: Any) {
-        
-        
-        
         
         if parolaGenerata.text! != "" {
             performSegue(withIdentifier: "segue", sender: self)
         }
     }
-    
-    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         var showNoWord = segue.destination as! ShowNoWordsViewController
         
         showNoWord.word = parolaGenerata.text!
     }
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        
         inizioLabel.textColor = UIColor.blue
-        
         parolaGenerata.text = " "
-        
-        
         //characterNumber = Int(legthStepper.value)
         //fonemaInizialeLegth = (fonemaIniziale.text?.count)!
         print("\(fonemaInizialeLegth)aa")
-        
         print("AA \(characterNumber)")
-        
     }
-    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
-    
-    
     @IBAction func generationStart(_ sender: Any) {
-        
             generazione()
-        
-           // generationAndCheck()
-            
-        
-        
-        // var w = lunghezzaSlider.value
-        
+
     }
     func generazione()-> String {
         
@@ -131,22 +92,12 @@ class NoWordGenerator: UIViewController {
             let okAction = UIAlertAction(title: "OK" , style: .default)
             present(alert, animated: true)
             alert.addAction(okAction)
-            
-            
-            
-        } else {
-            
-            if  fonemaInizialeLegth == characterNumber  {
+        } else {            if  fonemaInizialeLegth == characterNumber  {
                 let alert = UIAlertController(title: "Attenzione", message: "Controlla la lunghezza della parola" ,preferredStyle: .alert)
                 let okAction = UIAlertAction(title: "OK" , style: .default)
                 present(alert, animated: true)
                 alert.addAction(okAction)
             } else {
-        
-        
-                
-                
-        
             let MAX : UInt32 = 13
             let random_number1 = Int(arc4random_uniform(MAX))
             let random_number3 = Int(arc4random_uniform(MAX))
@@ -184,104 +135,109 @@ class NoWordGenerator: UIViewController {
             let fChar = fonemaIniziale.text?.first
             let lastChar = fonemaIniziale.text?.last
             
-          
-            
-            
+                func inizioVocale() {
+                    parolaGenerata.text = fonemaIniziale.text! + l1 + l2 + l3 + l4 + l5 + l6 + l7 + l8 + l9 + l10
+                    fonemaIniziale.textColor = UIColor.red
+                }
+                func inizioConsonante (){
+                    parolaGenerata.text = fonemaIniziale.text! + l2 + l3 +  l4 + l5 + l6 + l7 + l8 + l9 + l10 + l1
+fonemaIniziale.textColor = UIColor.red
+                }
+            func inizioVocaleCentro(){
+                parolaGenerata.text = l11 + l1 + fonemaIniziale.text!  + l2 + l3 + l4 + l5 + l6 + l7 + l8 + l9 + l10
+                fonemaIniziale.textColor = UIColor.red
+            }
+            func inizioConsonanteCentro(){
+                parolaGenerata.text = l11 + l2 + fonemaIniziale.text! + l3 +  l4 + l5  + l6 + l7 + l8 + l9 + l10 + l1
+fonemaIniziale.textColor = UIColor.red
+            }
+            func inizioVocaleFine(){
+                parolaGenerata.text = l2 + l3 +  l4 + l5 + l6 + l7 + l8 + l9 + l10 + l1 + l11 + fonemaIniziale.text!
+fonemaIniziale.textColor = UIColor.red
+            }
+            func inizioConsonanteFine(){
+                parolaGenerata.text =  l2 + l3 +  l4 + l5 + l6 + l7 + l8 + l9 + l10 + l1 + l11 + fonemaIniziale.text!
+fonemaIniziale.textColor = UIColor.red
+            }
             
             if position == 2 {
-                
-                
-                
                 //controlla se il fonema inserito è lungo  uno o due caratteri in meno alla lunghezza della parola lo centra meglio
-                
-                
                 if fonemaInizialeLegth == characterNumber - 1 || fonemaInizialeLegth == characterNumber - 2 {
-                
-                    
-                    
                     if vocali.contains("\(fChar!)"){
                         if vocali.contains("\(lastChar!)"){
-                            parolaGenerata.text = l11 + fonemaIniziale.text! + l1 + l2 + l3 +  l4 + l5 + l6 + l7 + l8 + l9 + l10
-                            
+                            inizioVocaleCentro()
+                            generationCentro()
                         } else {
-                            parolaGenerata.text = l11 + fonemaIniziale.text! + l2 + l3 +  l4 + l5 + l6 + l7 + l8 + l9 + l10 + l1
-                            
+                            inizioConsonanteCentro()
+                            generationCentro()
                         }
-                        
-                        
                     } else {
                         
                         if vocali.contains("\(lastChar!)"){
-                            
-                            
-                            
-                            parolaGenerata.text = l12 + fonemaIniziale.text! + l1 + l2 + l3 +  l4 + l5 + l6 + l7 + l8 + l9 + l10
-                            
+                            inizioVocaleCentro()
+                            generationCentro()
                         } else {
-                            parolaGenerata.text = l12 + fonemaIniziale.text! + l2 + l3 +  l4 + l5 + l6 + l7 + l8 + l9 + l10 + l1
-                            
+                            inizioConsonanteCentro()
+                            generationCentro()
                         }
                         
                     }
                     
                 } else {
-                    
-                    
-                
                 //fine controllo
-                    
-                    
                 if vocali.contains("\(fChar!)"){
                     if vocali.contains("\(lastChar!)"){
-                        parolaGenerata.text = l11 + fonemaIniziale.text! + l1 + l2 + l3 +  l4 + l5 + l6 + l7 + l8 + l9 + l10
-                        
+                        inizioVocaleCentro()
+                        generationCentro()
+
+//                        generationAndCheck()
                     } else {
-                        parolaGenerata.text = l11 + fonemaIniziale.text! + l2 + l3 +  l4 + l5 + l6 + l7 + l8 + l9 + l10 + l1
-                        
+                        inizioConsonanteCentro()
+                        generationIniziale()
+
+//                        generationAndCheck()
                     }
-                    
-                    
                 } else {
-                    
                     if vocali.contains("\(lastChar!)"){
-                        
-                        
-                        
-                        parolaGenerata.text = l11 + l12 + fonemaIniziale.text! + l1 + l2 + l3 +  l4 + l5 + l6 + l7 + l8 + l9 + l10
-                        
+                        inizioVocaleCentro()
+                        generationCentro()
+
+//                        generationAndCheck()
                     } else {
-                        parolaGenerata.text = l11 + l12 + fonemaIniziale.text! + l2 + l3 +  l4 + l5 + l6 + l7 + l8 + l9 + l10 + l1
-                        
+                        inizioConsonanteCentro()
+                        generationCentro()
+
+//                        generationAndCheck()
                     }
-                    
                 }
                 }
-                
             }else if position == 1 {
-                
                 if vocali.contains("\(lastChar!)"){
-                    parolaGenerata.text = fonemaIniziale.text! + l1 + l2 + l3 + l4 + l5 + l6 + l7 + l8 + l9 + l10
-                    
+                    inizioVocale()
+                    generationIniziale()
+
+//                    generationAndCheck()
                 } else {
-                    parolaGenerata.text = fonemaIniziale.text! + l2 + l3 + l4 + l5 + l6 + l7 + l8 + l9 + l10 + l1
-                    
+                  inizioConsonante()
+                    generationIniziale()
+
+//                    generationAndCheck()
                 }
             } else {
                 
                 if vocali.contains("\(fChar!)"){
-                    parolaGenerata.text = l1 + l2 + l3 + l4 + l5 + l6 + l7 + l8 + l9 + l10 + l11 + fonemaIniziale.text!
-                    
+                    inizioVocaleFine()
+                    generationFinale ()
                 } else {
-                    parolaGenerata.text =  l1 + l2 + l3 + l4 + l5 + l6 + l7 + l8 + l9 + l10 + fonemaIniziale.text!
-                    
+                    inizioConsonanteFine()
+                    generationFinale ()
                 }
                 
             }
-            generationAndCheck()
+            
        //}
             }}
         return parolaGenerata.text!
-        
     }
     func generationAndCheck() -> String  {
         let str = parolaGenerata.text!
@@ -295,26 +251,13 @@ class NoWordGenerator: UIViewController {
                 parole = try String(contentsOfFile: filepath)
                 print(trimStr)
             } catch {
-                // contents could not be loaded
-                //                    }
-                //                    let test: [String] = parole.components(separatedBy: "\n")
-                //                    guard test.contains(trimStr) else {
-                //                        parolaGenerata.isHidden = false
-                //                        parolaGenerata.text = trimStr
-                //                        return trimStr
-                //                    }
-                //                    trimStr = ""
+
                 while parole.contains(trimStr){
                     print(trimStr)
                     trimStr = " "
                     
                     self.generazione()
                     self.generationAndCheck()
-                    
-                    //                                           let newTrimStr:String
-                    //                                           newTrimStr = generazione()
-                    //                                            parolaGenerata.text = newTrimStr
-                    
                     parolaGenerata.text = trimStr
                     parolaGenerata.isHidden = true
                     
@@ -325,6 +268,18 @@ class NoWordGenerator: UIViewController {
         }
         return trimStr
     }
-    
+    func generationFinale (){
+//        Questo serve nei casi in cui la generazione debba esser fatta con il fonema alla fine.
+   differenza = 13 - characterNumber
+        parolaGenerata.text?.removeFirst(differenza)
+    }
+    func generationIniziale() {
+           differenza = 13 - characterNumber
+        parolaGenerata.text?.removeLast(differenza)
+    }
+    func generationCentro() {
+        differenza = 13 - characterNumber
+        parolaGenerata.text?.removeLast(differenza)
+    }
 }
 
