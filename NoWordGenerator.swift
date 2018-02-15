@@ -135,7 +135,9 @@ class NoWordGenerator: UIViewController {
             fonemaInizialeLegth = (fonemaIniziale.text?.count)!
             let fChar = fonemaIniziale.text?.first
             let lastChar = fonemaIniziale.text?.last
-                func inizioVocale() {
+            
+            
+                func inizioVocaleInizio() {
                     parolaGenerata.text = fonemaIniziale.text! + l1 + l2 + l3 + l4 + l5 + l6 + l7 + l8 + l9
                     fonemaIniziale.textColor = UIColor.red
                     let tot = (parolaGenerata.text?.count)! + fonemaInizialeLegth
@@ -143,43 +145,116 @@ class NoWordGenerator: UIViewController {
 
                     totale = tot
                 }
-                func inizioConsonante (){
+            
+            
+                func inizioConsonanteInizio(){
                     parolaGenerata.text = fonemaIniziale.text! + l2 + l3 +  l4 + l5 + l6 + l7 + l8 + l9 + l10
 fonemaIniziale.textColor = UIColor.red
                     let tot = (parolaGenerata.text?.count)! + fonemaInizialeLegth
                     print(tot)
 
                     totale = tot
-
                 }
-            func inizioVocaleCentro(){
-                parolaGenerata.text = l11 + l1 + fonemaIniziale.text!  + l2 + l3 + l4 + l5 + l6 + l7 + l8
+            
+            
+            func inizioVocaleFineVocaleCentro(){
+                parolaGenerata.text = l12 + l1 + fonemaIniziale.text! + l3 + l4 + l5 + l6 + l7 + l8 + l9
                 fonemaIniziale.textColor = UIColor.red
                 let tot = (parolaGenerata.text?.count)! + fonemaInizialeLegth
                 print(tot)
 
                 totale = tot
-
             }
-            func inizioConsonanteCentro(){
-                parolaGenerata.text = l11 + l2 + fonemaIniziale.text! + l3 +  l4 + l5  + l6 + l7 + l8 + l9
+            
+            
+            func inizioVocaleFineConsonanteCentro(){
+                parolaGenerata.text = l12 + l1 + fonemaIniziale.text! + l2 + l3 + l4 + l5 + l6 + l7 + l8
+                fonemaIniziale.textColor = UIColor.red
+                let tot = (parolaGenerata.text?.count)! + fonemaInizialeLegth
+                print(tot)
+                
+                totale = tot
+            }
+            
+            
+            func inizioConsonanteFineVocaleCentro(){
+                parolaGenerata.text = l11 + l2 + fonemaIniziale.text! + l3 +  l4 + l5 + l6 + l7 + l8 + l9
+                fonemaIniziale.textColor = UIColor.red
+                let tot = (parolaGenerata.text?.count)! + fonemaInizialeLegth
+                print(tot)
+                
+                totale = tot
+            }
+            
+            
+            func inizioConsonanteFineConsonanteCentro(){
+                parolaGenerata.text = l11 + l2 + fonemaIniziale.text! + l4 + l5 + l6 + l7 + l8 + l9 + l10
 fonemaIniziale.textColor = UIColor.red
                 let tot = (parolaGenerata.text?.count)! + fonemaInizialeLegth
                 print(tot)
 
                 totale = tot
-
             }
+            
+            
+            
+            // funzioni che centra no meglio la parola se il fonema è di lunghezza vicino alla lunghezza della parola
+            
+            
+            func inizioVocaleFineVocaleCentroCentrata(){
+                parolaGenerata.text = l1 + fonemaIniziale.text! + l3 + l4 + l5 + l6 + l7 + l8 + l9
+                fonemaIniziale.textColor = UIColor.red
+                let tot = (parolaGenerata.text?.count)! + fonemaInizialeLegth
+                print(tot)
+                
+                totale = tot
+            }
+            
+            
+            func inizioVocaleFineConsonanteCentroCentrata(){
+                parolaGenerata.text = l1 + fonemaIniziale.text! + l2 + l3 + l4 + l5 + l6 + l7 + l8
+                fonemaIniziale.textColor = UIColor.red
+                let tot = (parolaGenerata.text?.count)! + fonemaInizialeLegth
+                print(tot)
+                
+                totale = tot
+            }
+            
+            
+            func inizioConsonanteFineVocaleCentroCentrata(){
+                parolaGenerata.text = l2 + fonemaIniziale.text! + l3 +  l4 + l5 + l6 + l7 + l8 + l9
+                fonemaIniziale.textColor = UIColor.red
+                let tot = (parolaGenerata.text?.count)! + fonemaInizialeLegth
+                print(tot)
+                
+                totale = tot
+            }
+            
+            
+            func inizioConsonanteFineConsonanteCentroCentrata(){
+                parolaGenerata.text = l2 + fonemaIniziale.text! + l4 + l5 + l6 + l7 + l8 + l9 + l10
+                fonemaIniziale.textColor = UIColor.red
+                let tot = (parolaGenerata.text?.count)! + fonemaInizialeLegth
+                print(tot)
+                
+                totale = tot
+            }
+            
+            
+            //fine funzioni
+            
+            
             func inizioVocaleFine(){
-                parolaGenerata.text = l2 + l3 +  l4 + l5 + l6 + l7 + l8 + l9 + l10 + fonemaIniziale.text!
+                parolaGenerata.text = l1 + l2 + l3 +  l4 + l5 + l6 + l7 + l8 + l9 + fonemaIniziale.text!
 fonemaIniziale.textColor = UIColor.red
                 let tot = (parolaGenerata.text?.count)! + fonemaInizialeLegth
                 print(tot)
                 totale = tot
-
             }
+            
+            
             func inizioConsonanteFine(){
-                parolaGenerata.text =  l2 + l3 +  l4 + l5 + l6 + l7 + l8 + l9 + l11 + fonemaIniziale.text!
+                parolaGenerata.text =  l2 + l3 +  l4 + l5 + l6 + l7 + l8 + l9 + l10 + fonemaIniziale.text!
                 
                 let tot = (parolaGenerata.text?.count)! + fonemaInizialeLegth
                 print(tot)
@@ -188,51 +263,56 @@ fonemaIniziale.textColor = UIColor.red
 
 fonemaIniziale.textColor = UIColor.red
             }
+            
+            
             if position == 2 {
+                
                 //controlla se il fonema inserito è lungo  uno o due caratteri in meno alla lunghezza della parola lo centra meglio
+                
                 if fonemaInizialeLegth == characterNumber - 1 || fonemaInizialeLegth == characterNumber - 2 {
                     if vocali.contains("\(fChar!)"){
                         if vocali.contains("\(lastChar!)"){
-                            inizioVocaleCentro()
+                            inizioVocaleFineVocaleCentroCentrata()
                             generationCentro()
                         } else {
-                            inizioConsonanteCentro()
+                            inizioVocaleFineConsonanteCentroCentrata()
                             generationCentro()
                         }
                     } else {
                         
                         if vocali.contains("\(lastChar!)"){
-                            inizioVocaleCentro()
+                            inizioConsonanteFineVocaleCentroCentrata()
                             generationCentro()
                         } else {
-                            inizioConsonanteCentro()
+                            inizioConsonanteFineConsonanteCentroCentrata()
                             generationCentro()
                         }
                         
                     }
                     
+                    //fine controllo
+                    
                 } else {
-                //fine controllo
                 if vocali.contains("\(fChar!)"){
                     if vocali.contains("\(lastChar!)"){
-                        inizioVocaleCentro()
+                        inizioVocaleFineVocaleCentro()
                         generationCentro()
 
 //                        generationAndCheck()
                     } else {
-                        inizioConsonanteCentro()
+                        inizioVocaleFineConsonanteCentro()
                         generationIniziale()
 
 //                        generationAndCheck()
                     }
                 } else {
                     if vocali.contains("\(lastChar!)"){
-                        inizioVocaleCentro()
+                        inizioConsonanteFineVocaleCentro()
                         generationCentro()
 
 //                        generationAndCheck()
                     } else {
-                        inizioConsonanteCentro()
+                        inizioConsonanteFineConsonanteCentro()
                         generationCentro()
 
 //                        generationAndCheck()
@@ -241,12 +321,12 @@ fonemaIniziale.textColor = UIColor.red
                 }
             }else if position == 1 {
                 if vocali.contains("\(lastChar!)"){
-                    inizioVocale()
+                    inizioVocaleInizio()
                     generationIniziale()
 
 //                    generationAndCheck()
                 } else {
-                  inizioConsonante()
+                  inizioConsonanteInizio()
                     generationIniziale()
 
 //                    generationAndCheck()
