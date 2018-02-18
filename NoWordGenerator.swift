@@ -14,11 +14,17 @@ class NoWordGenerator: UIViewController {
     var position = 1
     var fonemaInizialeLegth = 0
     var totale : Int = 0
+    var wordsNumber: Int = 1
+    var chosenWords: [String] = []
+    var counter = 0
+    var chosenWordsToShow: [String] = []
 
     @IBOutlet weak var fonemaIniziale: UITextField!
     @IBOutlet weak var parolaGenerata: UILabel!
     
     @IBOutlet weak var wordLengthView: UILabel!
+    
+    @IBOutlet weak var wordsNumberLabel: UILabel!
     
     @IBAction func wordLegthStepper(_ sender: UIStepper) {
         characterNumber = Int(sender.value)
@@ -26,6 +32,36 @@ class NoWordGenerator: UIViewController {
     }
     
     @IBOutlet weak var legthStepper: UIStepper!
+    
+    @IBAction func wordsNumberStepper(_ sender: UIStepper) {
+        wordsNumber = Int(sender.value)
+        wordsNumberLabel.text = String(wordsNumber)
+    }
+    
+    @IBOutlet weak var showChosenWords: UILabel!
+    
+    @IBAction func scegliButton(_ sender: UIButton) {
+        
+        var h = String()
+        print("a \n a")
+        print(counter)
+        if counter < wordsNumber {
+            chosenWordsToShow.append(parolaGenerata.text!)
+            chosenWords.append(parolaGenerata.text!)
+            chosenWords.append(", ")
+            print("aaaa \(chosenWords)")
+            
+            for r in 0...counter * 2  {
+                print(chosenWords[r])
+                h = h + chosenWords[r]
+                
+            }
+            counter = counter + 1
+        }
+        
+        
+        showChosenWords.text = h
+    }
     
     
     //Imposto le lettere da usare
@@ -65,12 +101,17 @@ class NoWordGenerator: UIViewController {
     }
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         var showNoWord = segue.destination as! ShowNoWordsViewController
-        
-        showNoWord.word = parolaGenerata.text!
+        var count = segue.destination as! ShowNoWordsViewController
+        //showNoWord.word = parolaGenerata.text!
+        showNoWord.words = chosenWordsToShow
+        count.contatore = counter
     }
     override func viewDidLoad() {
         super.viewDidLoad()
         inizioLabel.textColor = UIColor.blue
+        
+        //init(red: 53.0, green: 120.0, blue: 246.0, alpha: 1.0)
+        
         parolaGenerata.text = " "
         //characterNumber = Int(legthStepper.value)
         //fonemaInizialeLegth = (fonemaIniziale.text?.count)!

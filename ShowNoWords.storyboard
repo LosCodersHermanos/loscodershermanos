@@ -53,14 +53,31 @@
                                 <rect key="frame" x="20" y="20" width="73" height="73"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <connections>
-                                    <segue destination="nZY-B6-0Kx" kind="show" id="h0E-Z3-bLk"/>
+                                    <segue destination="nZY-B6-0Kx" kind="show" identifier="" id="J87-6c-h71"/>
                                 </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3qp-WN-XS1">
+                                <rect key="frame" x="410" y="600" width="284" height="98"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.50632771170000002" green="0.97811136409999999" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="avantiButton:" destination="4Wo-AV-9bP" eventType="touchUpInside" id="TcY-Af-tB5"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ta0-2G-G7E">
+                                <rect key="frame" x="410" y="744" width="139" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.94647737320000003" green="0.40310141900000002" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <state key="normal" title="Button"/>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="8Dq-tU-6pI"/>
                     </view>
                     <connections>
+                        <outlet property="avantiButtonOutlet" destination="3qp-WN-XS1" id="n73-G9-K9R"/>
+                        <outlet property="doneButton" destination="Ta0-2G-G7E" id="4M1-7y-0Wc"/>
                         <outlet property="noWord" destination="HQg-sd-jsC" id="8gi-lC-ggc"/>
                     </connections>
                 </viewController>
