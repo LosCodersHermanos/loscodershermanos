@@ -9,6 +9,14 @@
 /* Begin PBXBuildFile section */
 		400B9C622033404D00C291A6 /* serpente.png in Resources */ = {isa = PBXBuildFile; fileRef = 400B9C612033404D00C291A6 /* serpente.png */; };
 		400B9C64203341C100C291A6 /* Snaker.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 400B9C63203341C100C291A6 /* Snaker.storyboard */; };
+		40A37CBF203A2A250074ED37 /* SoundsTrainer.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 40A37CBE203A2A250074ED37 /* SoundsTrainer.storyboard */; };
+		40A37CC1203A2A400074ED37 /* SoundsTrainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40A37CC0203A2A400074ED37 /* SoundsTrainerViewController.swift */; };
+		40A37CC3203A2A610074ED37 /* esseSpezzata.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 40A37CC2203A2A600074ED37 /* esseSpezzata.m4a */; };
+		40A37CC4203A2A610074ED37 /* esseSpezzata.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 40A37CC2203A2A600074ED37 /* esseSpezzata.m4a */; };
+		40A37CC5203A2A610074ED37 /* esseSpezzata.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 40A37CC2203A2A600074ED37 /* esseSpezzata.m4a */; };
+		40A37CC7203A2A670074ED37 /* affricataSorda.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 40A37CC6203A2A660074ED37 /* affricataSorda.m4a */; };
+		40A37CC8203A2A670074ED37 /* affricataSorda.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 40A37CC6203A2A660074ED37 /* affricataSorda.m4a */; };
+		40A37CC9203A2A670074ED37 /* affricataSorda.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 40A37CC6203A2A660074ED37 /* affricataSorda.m4a */; };
 		40F9116E2031DC8D009F6961 /* (null) in Resources */ = {isa = PBXBuildFile; };
 		40F911702031DCD1009F6961 /* SnakerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40F9116F2031DCD1009F6961 /* SnakerViewController.swift */; };
 		40F911722031DCFC009F6961 /* s sound.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 40F911712031DCFC009F6961 /* s sound.m4a */; };
@@ -57,6 +65,10 @@
 /* Begin PBXFileReference section */
 		400B9C612033404D00C291A6 /* serpente.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = serpente.png; sourceTree = "<group>"; };
 		400B9C63203341C100C291A6 /* Snaker.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Snaker.storyboard; sourceTree = "<group>"; };
+		40A37CBE203A2A250074ED37 /* SoundsTrainer.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = SoundsTrainer.storyboard; sourceTree = "<group>"; };
+		40A37CC0203A2A400074ED37 /* SoundsTrainerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SoundsTrainerViewController.swift; sourceTree = "<group>"; };
+		40A37CC2203A2A600074ED37 /* esseSpezzata.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = esseSpezzata.m4a; sourceTree = "<group>"; };
+		40A37CC6203A2A660074ED37 /* affricataSorda.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = affricataSorda.m4a; sourceTree = "<group>"; };
 		40F9116F2031DCD1009F6961 /* SnakerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SnakerViewController.swift; sourceTree = "<group>"; };
 		40F911712031DCFC009F6961 /* s sound.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = "s sound.m4a"; sourceTree = "<group>"; };
 		6F6CD92D203356B500BABC3F /* ShowNoWordsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowNoWordsViewController.swift; sourceTree = "<group>"; };
@@ -196,10 +208,13 @@
 				99AF658C202DB08B00F49A3E /* NoWordGenerator.storyboard */,
 				400B9C612033404D00C291A6 /* serpente.png */,
 				40F911712031DCFC009F6961 /* s sound.m4a */,
+				40A37CC6203A2A660074ED37 /* affricataSorda.m4a */,
+				40A37CC2203A2A600074ED37 /* esseSpezzata.m4a */,
 				99AF658E202DB0A100F49A3E /* CardGame.storyboard */,
 				400B9C63203341C100C291A6 /* Snaker.storyboard */,
 				99AF659F202E351C00F49A3E /* MemoSound.storyboard */,
 				6F6CD92F2033572B00BABC3F /* ShowNoWords.storyboard */,
+				40A37CBE203A2A250074ED37 /* SoundsTrainer.storyboard */,
 				6FEA993120358F4600491A3E /* ActionsNoWords.storyboard */,
 			);
 			name = StoryBoards;
@@ -212,6 +227,7 @@
 				99AF6591202DB0F600F49A3E /* NoWordGenerator.swift */,
 				40F9116F2031DCD1009F6961 /* SnakerViewController.swift */,
 				99AF65A1202E352800F49A3E /* MemoSoundViewController.swift */,
+				40A37CC0203A2A400074ED37 /* SoundsTrainerViewController.swift */,
 				6F6CD92D203356B500BABC3F /* ShowNoWordsViewController.swift */,
 			);
 			name = GamesController;
@@ -335,8 +351,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				40A37CC7203A2A670074ED37 /* affricataSorda.m4a in Resources */,
 				99AF65AB202E3A2500F49A3E /* 2.wav in Resources */,
 				40F911722031DCFC009F6961 /* s sound.m4a in Resources */,
+				40A37CC3203A2A610074ED37 /* esseSpezzata.m4a in Resources */,
 				99AF65A9202E3A2500F49A3E /* 4.wav in Resources */,
 				99AF659E202DD9EE00F49A3E /* dizionario.txt in Resources */,
 				99AF658F202DB0A100F49A3E /* CardGame.storyboard in Resources */,
@@ -347,6 +365,7 @@
 				99AF658D202DB08B00F49A3E /* NoWordGenerator.storyboard in Resources */,
 				6F6CD9302033572B00BABC3F /* ShowNoWords.storyboard in Resources */,
 				6FEA993220358F4600491A3E /* ActionsNoWords.storyboard in Resources */,
+				40A37CBF203A2A250074ED37 /* SoundsTrainer.storyboard in Resources */,
 				99AF65AA202E3A2500F49A3E /* 1.wav in Resources */,
 				99AF6566202DAE7900F49A3E /* Assets.xcassets in Resources */,
 				400B9C64203341C100C291A6 /* Snaker.storyboard in Resources */,
@@ -360,6 +379,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				40A37CC8203A2A670074ED37 /* affricataSorda.m4a in Resources */,
+				40A37CC4203A2A610074ED37 /* esseSpezzata.m4a in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -367,6 +388,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				40A37CC9203A2A670074ED37 /* affricataSorda.m4a in Resources */,
+				40A37CC5203A2A610074ED37 /* esseSpezzata.m4a in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -379,6 +402,7 @@
 			files = (
 				40F911702031DCD1009F6961 /* SnakerViewController.swift in Sources */,
 				99AF6592202DB0F600F49A3E /* NoWordGenerator.swift in Sources */,
+				40A37CC1203A2A400074ED37 /* SoundsTrainerViewController.swift in Sources */,
 				99AF655E202DAE7900F49A3E /* ViewController.swift in Sources */,
 				99AF6564202DAE7900F49A3E /* loscodershermanos.xcdatamodeld in Sources */,
 				99AF65A2202E352800F49A3E /* MemoSoundViewController.swift in Sources */,
