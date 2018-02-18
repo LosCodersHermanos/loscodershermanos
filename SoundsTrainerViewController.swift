@@ -12,6 +12,9 @@ import AVFoundation
 class SoundsTrainerViewController: UIViewController, AVAudioPlayerDelegate {
     
     
+    // TO DO: BISOGNA ANCORA BLOCCARE I BOTTONI IN MODO DA SBLOCCARLI AD OGNI TAP DEL BOTTONE PRECEDENTE (COSì DA CREARE UN PERCORSO OBBLIGATO)
+    
+    
     
     // VAR per il player del fonema /s/
     var buttonPlayer: AVAudioPlayer!
