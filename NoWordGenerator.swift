@@ -8,7 +8,10 @@
 
 import UIKit
 
-class NoWordGenerator: UIViewController {
+class NoWordGenerator: UIViewController, UITableViewDataSource, UITableViewDelegate {
+    
+    
+    @IBOutlet weak var wordsTableView: UITableView!
     var differenza: Int = 0
     var characterNumber : Int = 3
     var position = 1
@@ -24,7 +27,7 @@ class NoWordGenerator: UIViewController {
     
     @IBOutlet weak var wordLengthView: UILabel!
     
-    @IBOutlet weak var wordsNumberLabel: UILabel!
+   // @IBOutlet weak var wordsNumberLabel: UILabel!
     
     @IBAction func wordLegthStepper(_ sender: UIStepper) {
         characterNumber = Int(sender.value)
@@ -33,16 +36,16 @@ class NoWordGenerator: UIViewController {
     
     @IBOutlet weak var legthStepper: UIStepper!
     
-    @IBAction func wordsNumberStepper(_ sender: UIStepper) {
+    /*@IBAction func wordsNumberStepper(_ sender: UIStepper) {
         wordsNumber = Int(sender.value)
         wordsNumberLabel.text = String(wordsNumber)
-    }
+    }*/
     
-    @IBOutlet weak var showChosenWords: UILabel!
+    
     
     @IBAction func scegliButton(_ sender: UIButton) {
         
-        var h = String()
+       /* var h = String()
         print("a \n a")
         print(counter)
         if counter < wordsNumber {
@@ -57,10 +60,16 @@ class NoWordGenerator: UIViewController {
                 
             }
             counter = counter + 1
-        }
+        }*/
         
         
-        showChosenWords.text = h
+        //showChosenWords.text = h
+        
+        chosenWordsToShow.append(parolaGenerata.text!)
+        let indexPath = IndexPath(row: chosenWordsToShow.count - 1, section: 0)
+        wordsTableView.beginUpdates()
+        wordsTableView.insertRows(at: [indexPath], with: .automatic)
+        wordsTableView.endUpdates()
     }
     
     
@@ -69,63 +78,102 @@ class NoWordGenerator: UIViewController {
     let vocali = ["a", "e", "i", "o", "u"]
     // Controllo parole conosciute
     
-    @IBAction func positionSlider(_ sender: UISlider) {
-        position = Int(sender.value)
+ 
+    
+    
+    
+    
+    @IBOutlet weak var positionContoller: UISegmentedControl!
+    
+    @IBAction func changePositionController(_ sender: UISegmentedControl) {
         
-        
-        if position == 1{
-            inizioLabel.textColor = UIColor.blue
-            centroLabel.textColor = UIColor.black
-            fineLabel.textColor = UIColor.black
-        } else if position == 2 {
-            inizioLabel.textColor = UIColor.black
-            centroLabel.textColor = UIColor.blue
-            fineLabel.textColor = UIColor.black
+        if positionContoller.selectedSegmentIndex == 0 {
+            position = 1
+        } else if positionContoller.selectedSegmentIndex == 1 {
+            position = 2
         } else {
-            inizioLabel.textColor = UIColor.black
-            centroLabel.textColor = UIColor.black
-            fineLabel.textColor = UIColor.blue
+            position = 3
         }
-        
-        
     }
     
-    @IBOutlet weak var inizioLabel: UILabel!
-    @IBOutlet weak var centroLabel: UILabel!
-    @IBOutlet weak var fineLabel: UILabel!
+    
+    
+    
     @IBAction func playButton(_ sender: Any) {
         
         if parolaGenerata.text! != "" {
             performSegue(withIdentifier: "segue", sender: self)
         }
     }
+    
+    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         var showNoWord = segue.destination as! ShowNoWordsViewController
-        var count = segue.destination as! ShowNoWordsViewController
+        //var count = segue.destination as! ShowNoWordsViewController
         //showNoWord.word = parolaGenerata.text!
         showNoWord.words = chosenWordsToShow
-        count.contatore = counter
+        //count.contatore = counter
     }
+    
+    
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        inizioLabel.textColor = UIColor.blue
         
-        //init(red: 53.0, green: 120.0, blue: 246.0, alpha: 1.0)
         
         parolaGenerata.text = " "
         //characterNumber = Int(legthStepper.value)
         //fonemaInizialeLegth = (fonemaIniziale.text?.count)!
         print("\(fonemaInizialeLegth)aa")
         print("AA \(characterNumber)")
+        
+        wordsTableView.isEditing = !wordsTableView.isEditing
     }
+    
+    
+    
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+    
+    
+    public func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return (chosenWordsToShow.count)
+        print(chosenWordsToShow.count)
+    }
+    
+    
+    public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "wordCell", for: indexPath) as! noWordGeneratorTableViewCell
+        cell.wordLabel.text = chosenWordsToShow[indexPath.row]
+        print(" parola \(chosenWordsToShow[indexPath.row])")
+        
+        return (cell)
+    }
+    
+    
+    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
+        if ( editingStyle == .delete) {
+            chosenWordsToShow.remove(at: indexPath.item)
+            tableView.deleteRows(at: [indexPath], with: .automatic)
+        }
+    }
+    
+    
+    
+    
     @IBAction func generationStart(_ sender: Any) {
             generazione()
 
     }
+    
+    
+    
     func generazione()-> String {
         
        fonemaInizialeLegth = (fonemaIniziale.text?.count)!
@@ -382,9 +430,14 @@ fonemaIniziale.textColor = UIColor.red
                 }
                 
             }
-            }}
+            }
+            
+        }
         return parolaGenerata.text!
     }
+    
+    
+    
     func generationFinale (){
 //        Questo serve nei casi in cui la generazione debba esser fatta con il fonema alla fine.
         differenza = (totale) - characterNumber - fonemaInizialeLegth
@@ -392,11 +445,15 @@ fonemaIniziale.textColor = UIColor.red
 
         parolaGenerata.text?.removeFirst(differenza)
     }
+    
+    
     func generationIniziale() {
            differenza = (totale) - characterNumber - fonemaInizialeLegth
         print("La differenza è di: " , differenza)
         parolaGenerata.text?.removeLast(differenza)
     }
+    
+    
     func generationCentro() {
         differenza = (totale ) - characterNumber - fonemaInizialeLegth
         print("La differenza è di: " , differenza)

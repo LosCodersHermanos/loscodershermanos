@@ -20,6 +20,8 @@ class ShowNoWordsViewController: UIViewController {
     var i = 0
     
     @IBAction func avantiButton(_ sender: UIButton) {
+       
+         contatore = words.count
         
        // print("conteggio \(a)")
         if i < contatore - 2 {

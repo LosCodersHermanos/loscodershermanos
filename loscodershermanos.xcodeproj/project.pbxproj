@@ -20,6 +20,7 @@
 		40F9116E2031DC8D009F6961 /* (null) in Resources */ = {isa = PBXBuildFile; };
 		40F911702031DCD1009F6961 /* SnakerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40F9116F2031DCD1009F6961 /* SnakerViewController.swift */; };
 		40F911722031DCFC009F6961 /* s sound.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 40F911712031DCFC009F6961 /* s sound.m4a */; };
+		6F4C7F81203B544600E1755B /* noWordGeneratorTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F4C7F80203B544600E1755B /* noWordGeneratorTableViewCell.swift */; };
 		6F6CD92E203356B500BABC3F /* ShowNoWordsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F6CD92D203356B500BABC3F /* ShowNoWordsViewController.swift */; };
 		6F6CD9302033572B00BABC3F /* ShowNoWords.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6F6CD92F2033572B00BABC3F /* ShowNoWords.storyboard */; };
 		6FEA993220358F4600491A3E /* ActionsNoWords.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6FEA993120358F4600491A3E /* ActionsNoWords.storyboard */; };
@@ -71,6 +72,7 @@
 		40A37CC6203A2A660074ED37 /* affricataSorda.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = affricataSorda.m4a; sourceTree = "<group>"; };
 		40F9116F2031DCD1009F6961 /* SnakerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SnakerViewController.swift; sourceTree = "<group>"; };
 		40F911712031DCFC009F6961 /* s sound.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = "s sound.m4a"; sourceTree = "<group>"; };
+		6F4C7F80203B544600E1755B /* noWordGeneratorTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = noWordGeneratorTableViewCell.swift; sourceTree = "<group>"; };
 		6F6CD92D203356B500BABC3F /* ShowNoWordsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowNoWordsViewController.swift; sourceTree = "<group>"; };
 		6F6CD92F2033572B00BABC3F /* ShowNoWords.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ShowNoWords.storyboard; sourceTree = "<group>"; };
 		6FEA993120358F4600491A3E /* ActionsNoWords.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ActionsNoWords.storyboard; sourceTree = "<group>"; };
@@ -224,6 +226,7 @@
 			isa = PBXGroup;
 			children = (
 				99AF6593202DB11500F49A3E /* CardGame.swift */,
+				6F4C7F80203B544600E1755B /* noWordGeneratorTableViewCell.swift */,
 				99AF6591202DB0F600F49A3E /* NoWordGenerator.swift */,
 				40F9116F2031DCD1009F6961 /* SnakerViewController.swift */,
 				99AF65A1202E352800F49A3E /* MemoSoundViewController.swift */,
@@ -400,6 +403,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6F4C7F81203B544600E1755B /* noWordGeneratorTableViewCell.swift in Sources */,
 				40F911702031DCD1009F6961 /* SnakerViewController.swift in Sources */,
 				99AF6592202DB0F600F49A3E /* NoWordGenerator.swift in Sources */,
 				40A37CC1203A2A400074ED37 /* SoundsTrainerViewController.swift in Sources */,
