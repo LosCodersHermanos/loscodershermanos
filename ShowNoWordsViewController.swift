@@ -21,7 +21,11 @@ class ShowNoWordsViewController: UIViewController {
     
     @IBAction func avantiButton(_ sender: UIButton) {
        
-         contatore = words.count
+        
+        
+        print("i: \(i)")
+        
+        print("cont: \(contatore)")
         
        // print("conteggio \(a)")
         if i < contatore - 2 {
@@ -52,15 +56,24 @@ class ShowNoWordsViewController: UIViewController {
         super.viewDidLoad()
         
         
+        contatore = words.count
         
-        doneButton.isEnabled = false
-        doneButton.isHidden = true
-        
+        if contatore == 1 {
+            avantiButtonOutlet.isHidden = true
+            avantiButtonOutlet.isEnabled = false
+            doneButton.isHidden = false
+            doneButton.isEnabled = true
+        } else {
+            doneButton.isEnabled = false
+            doneButton.isHidden = true
+            avantiButtonOutlet.isHidden = false
+            avantiButtonOutlet.isEnabled = true
+        }
         //a = words.count
         
         noWord.text = words[0]
         
-        
+      /*  if words != [] {
         
         for i in 0...(contatore - 1) {
         noWord.text = words[i]
@@ -69,8 +82,8 @@ class ShowNoWordsViewController: UIViewController {
             print("tttttt\(contatore)")
             
                     }
-    
-        
+            
+        }*/
         
         // Do any additional setup after loading the view.
     }

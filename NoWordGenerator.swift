@@ -11,6 +11,7 @@ import UIKit
 class NoWordGenerator: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
     
+   
     @IBOutlet weak var wordsTableView: UITableView!
     var differenza: Int = 0
     var characterNumber : Int = 3
@@ -99,20 +100,34 @@ class NoWordGenerator: UIViewController, UITableViewDataSource, UITableViewDeleg
     
     
     
+    
     @IBAction func playButton(_ sender: Any) {
         
-        if parolaGenerata.text! != "" {
-            performSegue(withIdentifier: "segue", sender: self)
+        print("riempito?: \(chosenWordsToShow.isEmpty)")
+            
+            if chosenWordsToShow.isEmpty {
+                let alert = UIAlertController(title: "Attenzione", message: "Genera una parola" ,preferredStyle: .alert)
+                let okAction = UIAlertAction(title: "OK" , style: .default)
+                present(alert, animated: true)
+                alert.addAction(okAction)
+            } else 
+                if parolaGenerata.text! != "" {
+                    performSegue(withIdentifier: "segue", sender: self)
+                    
+                
+                
         }
     }
     
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if chosenWordsToShow.isEmpty == false {
         var showNoWord = segue.destination as! ShowNoWordsViewController
         //var count = segue.destination as! ShowNoWordsViewController
         //showNoWord.word = parolaGenerata.text!
         showNoWord.words = chosenWordsToShow
         //count.contatore = counter
+    }
     }
     
     
@@ -130,6 +145,7 @@ class NoWordGenerator: UIViewController, UITableViewDataSource, UITableViewDeleg
         print("AA \(characterNumber)")
         
         wordsTableView.isEditing = !wordsTableView.isEditing
+        
     }
     
     

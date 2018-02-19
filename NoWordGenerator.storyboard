@@ -135,7 +135,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="1112" height="834"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="sfondoNoWordPrato" translatesAutoresizingMaskIntoConstraints="NO" id="ub0-Of-bla">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="sfondoPrato" translatesAutoresizingMaskIntoConstraints="NO" id="ub0-Of-bla">
                                 <rect key="frame" x="0.0" y="0.0" width="1112" height="834"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </imageView>
@@ -171,7 +171,7 @@
                                 </view>
                                 <blurEffect style="light"/>
                             </visualEffectView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ucz-He-IST">
+                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ucz-He-IST">
                                 <rect key="frame" x="0.0" y="0.0" width="1112" height="834"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.31389126709999998" colorSpace="custom" customColorSpace="displayP3"/>
@@ -351,7 +351,7 @@
         <image name="BottoneIndietro" width="96" height="96"/>
         <image name="button" width="642" height="310"/>
         <image name="sfondo" width="1438" height="1342"/>
-        <image name="sfondoNoWordPrato" width="1024" height="768"/>
+        <image name="sfondoPrato" width="3072" height="2304"/>
         <image name="start-hi" width="600" height="192"/>
     </resources>
 </document>
