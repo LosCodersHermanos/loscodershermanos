@@ -102,21 +102,14 @@ class NoWordGenerator: UIViewController, UITableViewDataSource, UITableViewDeleg
     
     
     @IBAction func playButton(_ sender: Any) {
+        /*var x = chosenWordsToShow.count
+        print(x)
         
-        print("riempito?: \(chosenWordsToShow.isEmpty)")
-            
-            if chosenWordsToShow.isEmpty {
-                let alert = UIAlertController(title: "Attenzione", message: "Genera una parola" ,preferredStyle: .alert)
-                let okAction = UIAlertAction(title: "OK" , style: .default)
-                present(alert, animated: true)
-                alert.addAction(okAction)
-            } else 
-                if parolaGenerata.text! != "" {
-                    performSegue(withIdentifier: "segue", sender: self)
-                    
-                
-                
-        }
+        print("PAROLE \(chosenWordsToShow)")
+        for i in 0...x - 1 {
+            writePList(value: chosenWordsToShow[i])
+            print("CONTEN\(contentsOfFile())")
+        }*/
     }
     
     
@@ -130,9 +123,39 @@ class NoWordGenerator: UIViewController, UITableViewDataSource, UITableViewDeleg
     }
     }
     
+    override func shouldPerformSegue(withIdentifier identifier: String, sender: Any?) -> Bool {
+        if chosenWordsToShow.isEmpty {
+            let alert = UIAlertController(title: "Attenzione", message: "Genera una parola" ,preferredStyle: .alert)
+            let okAction = UIAlertAction(title: "OK" , style: .default)
+            present(alert, animated: true)
+            alert.addAction(okAction)
+            
+            return false
+        }else{
+            return true
+        }
+    }
     
     
     
+/*
+    func writePList(value: String) {
+        
+        let resourcePath = Bundle.main.path(forResource: "noWordsGenerator", ofType: "plist")
+        let data: NSArray = [value] as NSArray
+        data.write(toFile: resourcePath!, atomically: false)
+        
+    }
+    
+    
+    func contentsOfFile() -> [String] {
+        
+        let resourcePath = Bundle.main.path(forResource: "noWordsGenerator", ofType: "plist")
+        let contents = NSArray(contentsOfFile: resourcePath!) as? [String]
+        return contents!
+        
+    }
+    */
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -145,7 +168,18 @@ class NoWordGenerator: UIViewController, UITableViewDataSource, UITableViewDeleg
         print("AA \(characterNumber)")
         
         wordsTableView.isEditing = !wordsTableView.isEditing
+        //contentsOfFile()
         
+        /*
+        var x = contentsOfFile().count
+        print(x)
+        
+        //print("PAROLE \(contentsOfFile())")
+        for i in 0...x - 1 {
+            chosenWordsToShow[i] = contentsOfFile()[i]
+            print("CONTEN\(contentsOfFile())")
+        }*/
+    
     }
     
     

@@ -18,6 +18,25 @@ class ShowNoWordsViewController: UIViewController {
     
     //var a = 0
     var i = 0
+    @IBAction func reloadWords(_ sender: UIButton) {
+        
+      performSegue(withIdentifier: "SegueReloadWords", sender: self)
+        
+    }
+    
+    
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+       
+            var reloadNoWord = segue.destination as! NoWordGenerator
+            //var count = segue.destination as! ShowNoWordsViewController
+            //showNoWord.word = parolaGenerata.text!
+            reloadNoWord.chosenWordsToShow = words
+            //count.contatore = counter
+        
+    }
+    
+    
     
     @IBAction func avantiButton(_ sender: UIButton) {
        
@@ -70,9 +89,9 @@ class ShowNoWordsViewController: UIViewController {
             avantiButtonOutlet.isEnabled = true
         }
         //a = words.count
-        
+        if words.isEmpty == false {
         noWord.text = words[0]
-        
+        }
       /*  if words != [] {
         
         for i in 0...(contatore - 1) {

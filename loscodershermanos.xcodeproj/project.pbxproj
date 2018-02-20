@@ -24,6 +24,7 @@
 		6F6CD92E203356B500BABC3F /* ShowNoWordsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F6CD92D203356B500BABC3F /* ShowNoWordsViewController.swift */; };
 		6F6CD9302033572B00BABC3F /* ShowNoWords.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6F6CD92F2033572B00BABC3F /* ShowNoWords.storyboard */; };
 		6FEA993220358F4600491A3E /* ActionsNoWords.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6FEA993120358F4600491A3E /* ActionsNoWords.storyboard */; };
+		6FFDA8C8203C3B8300CEC24B /* noWordsGenerator.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6FFDA8C7203C3B8300CEC24B /* noWordsGenerator.plist */; };
 		99AF655C202DAE7900F49A3E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99AF655B202DAE7900F49A3E /* AppDelegate.swift */; };
 		99AF655E202DAE7900F49A3E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99AF655D202DAE7900F49A3E /* ViewController.swift */; };
 		99AF6561202DAE7900F49A3E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 99AF655F202DAE7900F49A3E /* Main.storyboard */; };
@@ -76,6 +77,7 @@
 		6F6CD92D203356B500BABC3F /* ShowNoWordsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowNoWordsViewController.swift; sourceTree = "<group>"; };
 		6F6CD92F2033572B00BABC3F /* ShowNoWords.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ShowNoWords.storyboard; sourceTree = "<group>"; };
 		6FEA993120358F4600491A3E /* ActionsNoWords.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ActionsNoWords.storyboard; sourceTree = "<group>"; };
+		6FFDA8C7203C3B8300CEC24B /* noWordsGenerator.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = noWordsGenerator.plist; sourceTree = "<group>"; };
 		99AF6558202DAE7900F49A3E /* loscodershermanos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = loscodershermanos.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		99AF655B202DAE7900F49A3E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		99AF655D202DAE7900F49A3E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -158,6 +160,7 @@
 				99AF6590202DB0AE00F49A3E /* StoryBoards */,
 				99AF656A202DAE7900F49A3E /* Info.plist */,
 				99AF6562202DAE7900F49A3E /* loscodershermanos.xcdatamodeld */,
+				6FFDA8C7203C3B8300CEC24B /* noWordsGenerator.plist */,
 			);
 			path = loscodershermanos;
 			sourceTree = "<group>";
@@ -367,6 +370,7 @@
 				99AF65A0202E351C00F49A3E /* MemoSound.storyboard in Resources */,
 				99AF658D202DB08B00F49A3E /* NoWordGenerator.storyboard in Resources */,
 				6F6CD9302033572B00BABC3F /* ShowNoWords.storyboard in Resources */,
+				6FFDA8C8203C3B8300CEC24B /* noWordsGenerator.plist in Resources */,
 				6FEA993220358F4600491A3E /* ActionsNoWords.storyboard in Resources */,
 				40A37CBF203A2A250074ED37 /* SoundsTrainer.storyboard in Resources */,
 				99AF65AA202E3A2500F49A3E /* 1.wav in Resources */,

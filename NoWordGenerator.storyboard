@@ -119,14 +119,6 @@
             </objects>
             <point key="canvasLocation" x="179" y="-147"/>
         </scene>
-        <!--ShowNoWords-->
-        <scene sceneID="EsD-ZS-TYR">
-            <objects>
-                <viewControllerPlaceholder storyboardName="ShowNoWords" id="iBQ-55-PDG" sceneMemberID="viewController"/>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="5rx-a7-PLq" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-469" y="-509"/>
-        </scene>
         <!--No Word Generator-->
         <scene sceneID="HNH-Eo-9OY">
             <objects>
@@ -239,7 +231,7 @@
                                 </state>
                                 <connections>
                                     <action selector="playButton:" destination="Dsv-bA-pPc" eventType="touchUpInside" id="ozn-zL-dVC"/>
-                                    <segue destination="iBQ-55-PDG" kind="show" identifier="segue" id="AZN-qA-AYk"/>
+                                    <segue destination="NMC-X5-8hs" kind="show" identifier="SegueShowNoWords" id="2mm-j1-2hT"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Parole scelte" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gik-Zm-2cq">
@@ -344,6 +336,14 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ysc-nH-TMA" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-609.17266187050359" y="0.71942446043165476"/>
+        </scene>
+        <!--ShowNoWords-->
+        <scene sceneID="eyx-VK-Gi8">
+            <objects>
+                <viewControllerPlaceholder storyboardName="ShowNoWords" id="NMC-X5-8hs" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3HC-2L-u6b" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-346" y="557"/>
         </scene>
     </scenes>
     <resources>
