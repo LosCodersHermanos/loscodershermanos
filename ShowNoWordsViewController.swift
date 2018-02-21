@@ -12,6 +12,7 @@ class ShowNoWordsViewController: UIViewController {
 
     @IBOutlet weak var noWord: UILabel!
     
+    @IBOutlet weak var attivitaCompletataLabel: UILabel!
     @IBOutlet weak var avantiButtonOutlet: UIButton!
     
     @IBOutlet weak var doneButton: UIButton!
@@ -20,22 +21,22 @@ class ShowNoWordsViewController: UIViewController {
     var i = 0
     @IBAction func reloadWords(_ sender: UIButton) {
         
-      performSegue(withIdentifier: "SegueReloadWords", sender: self)
+     // performSegue(withIdentifier: "SegueReloadWords", sender: self)
         
     }
     
     
     
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-       
-            var reloadNoWord = segue.destination as! NoWordGenerator
-            //var count = segue.destination as! ShowNoWordsViewController
-            //showNoWord.word = parolaGenerata.text!
-            reloadNoWord.chosenWordsToShow = words
-            //count.contatore = counter
-        
-    }
-    
+//    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+//       
+//            var reloadNoWord = segue.destination as! NoWordGenerator
+//            //var count = segue.destination as! ShowNoWordsViewController
+//            //showNoWord.word = parolaGenerata.text!
+//            reloadNoWord.chosenWordsToShow = words
+//            //count.contatore = counter
+//        
+//    }
+//    
     
     
     @IBAction func avantiButton(_ sender: UIButton) {
@@ -47,14 +48,15 @@ class ShowNoWordsViewController: UIViewController {
         print("cont: \(contatore)")
         
        // print("conteggio \(a)")
-        if i < contatore - 2 {
+        if i < contatore - 1 {
             
             print("prima \(i)")
             i = i + 1
             print("dopo \(i)")
             noWord.text = words[i]
         } else {
-            noWord.text = words[contatore - 1]
+            attivitaCompletataLabel.isHidden = false
+            noWord.isHidden = true
             avantiButtonOutlet.isHidden = true
             avantiButtonOutlet.isEnabled = false
             doneButton.isHidden = false
@@ -74,7 +76,7 @@ class ShowNoWordsViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        
+        attivitaCompletataLabel.isHidden = true
         contatore = words.count
         
         if contatore == 1 {
