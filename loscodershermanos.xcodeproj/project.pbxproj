@@ -9,14 +9,22 @@
 /* Begin PBXBuildFile section */
 		400B9C622033404D00C291A6 /* serpente.png in Resources */ = {isa = PBXBuildFile; fileRef = 400B9C612033404D00C291A6 /* serpente.png */; };
 		400B9C64203341C100C291A6 /* Snaker.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 400B9C63203341C100C291A6 /* Snaker.storyboard */; };
-		40A37CBF203A2A250074ED37 /* SoundsTrainer.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 40A37CBE203A2A250074ED37 /* SoundsTrainer.storyboard */; };
-		40A37CC1203A2A400074ED37 /* SoundsTrainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40A37CC0203A2A400074ED37 /* SoundsTrainerViewController.swift */; };
-		40A37CC3203A2A610074ED37 /* esseSpezzata.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 40A37CC2203A2A600074ED37 /* esseSpezzata.m4a */; };
-		40A37CC4203A2A610074ED37 /* esseSpezzata.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 40A37CC2203A2A600074ED37 /* esseSpezzata.m4a */; };
-		40A37CC5203A2A610074ED37 /* esseSpezzata.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 40A37CC2203A2A600074ED37 /* esseSpezzata.m4a */; };
-		40A37CC7203A2A670074ED37 /* affricataSorda.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 40A37CC6203A2A660074ED37 /* affricataSorda.m4a */; };
-		40A37CC8203A2A670074ED37 /* affricataSorda.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 40A37CC6203A2A660074ED37 /* affricataSorda.m4a */; };
-		40A37CC9203A2A670074ED37 /* affricataSorda.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 40A37CC6203A2A660074ED37 /* affricataSorda.m4a */; };
+		407C085A203D68A300478F53 /* SoundsTrainer.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 407C0859203D68A200478F53 /* SoundsTrainer.storyboard */; };
+		407C085C203D68C500478F53 /* SoundsTrainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 407C085B203D68C500478F53 /* SoundsTrainerViewController.swift */; };
+		407C086C203D68E700478F53 /* Rectangle GR.png in Resources */ = {isa = PBXBuildFile; fileRef = 407C085E203D68E700478F53 /* Rectangle GR.png */; };
+		407C086D203D68E700478F53 /* Rectangle 5.png in Resources */ = {isa = PBXBuildFile; fileRef = 407C085F203D68E700478F53 /* Rectangle 5.png */; };
+		407C086E203D68E700478F53 /* esseSpezzata.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 407C0860203D68E700478F53 /* esseSpezzata.m4a */; };
+		407C086F203D68E700478F53 /* Rectangle LG.png in Resources */ = {isa = PBXBuildFile; fileRef = 407C0861203D68E700478F53 /* Rectangle LG.png */; };
+		407C0870203D68E700478F53 /* Rectangle BL.png in Resources */ = {isa = PBXBuildFile; fileRef = 407C0862203D68E700478F53 /* Rectangle BL.png */; };
+		407C0871203D68E700478F53 /* Rectangle VI.png in Resources */ = {isa = PBXBuildFile; fileRef = 407C0863203D68E700478F53 /* Rectangle VI.png */; };
+		407C0872203D68E700478F53 /* bird.png in Resources */ = {isa = PBXBuildFile; fileRef = 407C0864203D68E700478F53 /* bird.png */; };
+		407C0873203D68E700478F53 /* Rectangle LB.png in Resources */ = {isa = PBXBuildFile; fileRef = 407C0865203D68E700478F53 /* Rectangle LB.png */; };
+		407C0874203D68E700478F53 /* nido.png in Resources */ = {isa = PBXBuildFile; fileRef = 407C0866203D68E700478F53 /* nido.png */; };
+		407C0875203D68E700478F53 /* Rectangle YEL.png in Resources */ = {isa = PBXBuildFile; fileRef = 407C0867203D68E700478F53 /* Rectangle YEL.png */; };
+		407C0876203D68E700478F53 /* Rectangle OR.png in Resources */ = {isa = PBXBuildFile; fileRef = 407C0868203D68E700478F53 /* Rectangle OR.png */; };
+		407C0877203D68E700478F53 /* bird2.png in Resources */ = {isa = PBXBuildFile; fileRef = 407C0869203D68E700478F53 /* bird2.png */; };
+		407C0878203D68E700478F53 /* birdLeft.png in Resources */ = {isa = PBXBuildFile; fileRef = 407C086A203D68E700478F53 /* birdLeft.png */; };
+		407C0879203D68E700478F53 /* affricataSorda.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 407C086B203D68E700478F53 /* affricataSorda.m4a */; };
 		40F9116E2031DC8D009F6961 /* (null) in Resources */ = {isa = PBXBuildFile; };
 		40F911702031DCD1009F6961 /* SnakerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40F9116F2031DCD1009F6961 /* SnakerViewController.swift */; };
 		40F911722031DCFC009F6961 /* s sound.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 40F911712031DCFC009F6961 /* s sound.m4a */; };
@@ -71,10 +79,22 @@
 /* Begin PBXFileReference section */
 		400B9C612033404D00C291A6 /* serpente.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = serpente.png; sourceTree = "<group>"; };
 		400B9C63203341C100C291A6 /* Snaker.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Snaker.storyboard; sourceTree = "<group>"; };
-		40A37CBE203A2A250074ED37 /* SoundsTrainer.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = SoundsTrainer.storyboard; sourceTree = "<group>"; };
-		40A37CC0203A2A400074ED37 /* SoundsTrainerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SoundsTrainerViewController.swift; sourceTree = "<group>"; };
-		40A37CC2203A2A600074ED37 /* esseSpezzata.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = esseSpezzata.m4a; sourceTree = "<group>"; };
-		40A37CC6203A2A660074ED37 /* affricataSorda.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = affricataSorda.m4a; sourceTree = "<group>"; };
+		407C0859203D68A200478F53 /* SoundsTrainer.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = SoundsTrainer.storyboard; sourceTree = "<group>"; };
+		407C085B203D68C500478F53 /* SoundsTrainerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SoundsTrainerViewController.swift; sourceTree = "<group>"; };
+		407C085E203D68E700478F53 /* Rectangle GR.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Rectangle GR.png"; sourceTree = "<group>"; };
+		407C085F203D68E700478F53 /* Rectangle 5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Rectangle 5.png"; sourceTree = "<group>"; };
+		407C0860203D68E700478F53 /* esseSpezzata.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = esseSpezzata.m4a; sourceTree = "<group>"; };
+		407C0861203D68E700478F53 /* Rectangle LG.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Rectangle LG.png"; sourceTree = "<group>"; };
+		407C0862203D68E700478F53 /* Rectangle BL.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Rectangle BL.png"; sourceTree = "<group>"; };
+		407C0863203D68E700478F53 /* Rectangle VI.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Rectangle VI.png"; sourceTree = "<group>"; };
+		407C0864203D68E700478F53 /* bird.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bird.png; sourceTree = "<group>"; };
+		407C0865203D68E700478F53 /* Rectangle LB.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Rectangle LB.png"; sourceTree = "<group>"; };
+		407C0866203D68E700478F53 /* nido.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = nido.png; sourceTree = "<group>"; };
+		407C0867203D68E700478F53 /* Rectangle YEL.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Rectangle YEL.png"; sourceTree = "<group>"; };
+		407C0868203D68E700478F53 /* Rectangle OR.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Rectangle OR.png"; sourceTree = "<group>"; };
+		407C0869203D68E700478F53 /* bird2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bird2.png; sourceTree = "<group>"; };
+		407C086A203D68E700478F53 /* birdLeft.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = birdLeft.png; sourceTree = "<group>"; };
+		407C086B203D68E700478F53 /* affricataSorda.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = affricataSorda.m4a; sourceTree = "<group>"; };
 		40F9116F2031DCD1009F6961 /* SnakerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SnakerViewController.swift; sourceTree = "<group>"; };
 		40F911712031DCFC009F6961 /* s sound.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = "s sound.m4a"; sourceTree = "<group>"; };
 		6F4C7F80203B544600E1755B /* noWordGeneratorTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = noWordGeneratorTableViewCell.swift; sourceTree = "<group>"; };
@@ -139,6 +159,34 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		407C0858203D673800478F53 /* Recovered References */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "Recovered References";
+			sourceTree = "<group>";
+		};
+		407C085D203D68E700478F53 /* SoundsTrainerFiles */ = {
+			isa = PBXGroup;
+			children = (
+				407C085E203D68E700478F53 /* Rectangle GR.png */,
+				407C085F203D68E700478F53 /* Rectangle 5.png */,
+				407C0860203D68E700478F53 /* esseSpezzata.m4a */,
+				407C0861203D68E700478F53 /* Rectangle LG.png */,
+				407C0862203D68E700478F53 /* Rectangle BL.png */,
+				407C0863203D68E700478F53 /* Rectangle VI.png */,
+				407C0864203D68E700478F53 /* bird.png */,
+				407C0865203D68E700478F53 /* Rectangle LB.png */,
+				407C0866203D68E700478F53 /* nido.png */,
+				407C0867203D68E700478F53 /* Rectangle YEL.png */,
+				407C0868203D68E700478F53 /* Rectangle OR.png */,
+				407C0869203D68E700478F53 /* bird2.png */,
+				407C086A203D68E700478F53 /* birdLeft.png */,
+				407C086B203D68E700478F53 /* affricataSorda.m4a */,
+			);
+			path = SoundsTrainerFiles;
+			sourceTree = "<group>";
+		};
 		99AF654F202DAE7900F49A3E = {
 			isa = PBXGroup;
 			children = (
@@ -146,6 +194,7 @@
 				99AF6572202DAE7900F49A3E /* loscodershermanosTests */,
 				99AF657D202DAE7900F49A3E /* loscodershermanosUITests */,
 				99AF6559202DAE7900F49A3E /* Products */,
+				407C0858203D673800478F53 /* Recovered References */,
 			);
 			sourceTree = "<group>";
 		};
@@ -168,7 +217,6 @@
 				99AF6590202DB0AE00F49A3E /* StoryBoards */,
 				99AF656A202DAE7900F49A3E /* Info.plist */,
 				99AF6562202DAE7900F49A3E /* loscodershermanos.xcdatamodeld */,
-				6FFDA8C7203C3B8300CEC24B /* noWordsGenerator.plist */,
 			);
 			path = loscodershermanos;
 			sourceTree = "<group>";
@@ -218,15 +266,16 @@
 			isa = PBXGroup;
 			children = (
 				99AF655F202DAE7900F49A3E /* Main.storyboard */,
+				407C0859203D68A200478F53 /* SoundsTrainer.storyboard */,
 				99AF658C202DB08B00F49A3E /* NoWordGenerator.storyboard */,
 				400B9C612033404D00C291A6 /* serpente.png */,
 				40F911712031DCFC009F6961 /* s sound.m4a */,
 				9932A997203AE1A90055CD8D /* ToccaLaLettera.storyboard */,
 				99AF658E202DB0A100F49A3E /* CardGame.storyboard */,
+				407C085D203D68E700478F53 /* SoundsTrainerFiles */,
 				400B9C63203341C100C291A6 /* Snaker.storyboard */,
 				99AF659F202E351C00F49A3E /* MemoSound.storyboard */,
 				6F6CD92F2033572B00BABC3F /* ShowNoWords.storyboard */,
-				40A37CBE203A2A250074ED37 /* SoundsTrainer.storyboard */,
 				6FEA993120358F4600491A3E /* ActionsNoWords.storyboard */,
 			);
 			name = StoryBoards;
@@ -237,6 +286,7 @@
 			children = (
 				99AF6593202DB11500F49A3E /* CardGame.swift */,
 				6F4C7F80203B544600E1755B /* noWordGeneratorTableViewCell.swift */,
+				407C085B203D68C500478F53 /* SoundsTrainerViewController.swift */,
 				99AF6591202DB0F600F49A3E /* NoWordGenerator.swift */,
 				9932A9A5203B312F0055CD8D /* Sfattabene.swift */,
 				996183A9203B3AF50084BF74 /* LettereGameViewController.swift */,
@@ -244,7 +294,6 @@
 				9932A995203AE1910055CD8D /* ToccaLaLetteraViewController.swift */,
 				40F9116F2031DCD1009F6961 /* SnakerViewController.swift */,
 				99AF65A1202E352800F49A3E /* MemoSoundViewController.swift */,
-				40A37CC0203A2A400074ED37 /* SoundsTrainerViewController.swift */,
 				6F6CD92D203356B500BABC3F /* ShowNoWordsViewController.swift */,
 			);
 			name = GamesController;
@@ -368,28 +417,39 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				40A37CC7203A2A670074ED37 /* affricataSorda.m4a in Resources */,
 				99AF65AB202E3A2500F49A3E /* 2.wav in Resources */,
+				407C0870203D68E700478F53 /* Rectangle BL.png in Resources */,
+				407C0872203D68E700478F53 /* bird.png in Resources */,
 				40F911722031DCFC009F6961 /* s sound.m4a in Resources */,
-				40A37CC3203A2A610074ED37 /* esseSpezzata.m4a in Resources */,
 				99AF65A9202E3A2500F49A3E /* 4.wav in Resources */,
+				407C086F203D68E700478F53 /* Rectangle LG.png in Resources */,
+				407C086C203D68E700478F53 /* Rectangle GR.png in Resources */,
 				99AF659E202DD9EE00F49A3E /* dizionario.txt in Resources */,
+				407C0876203D68E700478F53 /* Rectangle OR.png in Resources */,
+				407C085A203D68A300478F53 /* SoundsTrainer.storyboard in Resources */,
 				99AF658F202DB0A100F49A3E /* CardGame.storyboard in Resources */,
 				40F9116E2031DC8D009F6961 /* (null) in Resources */,
 				400B9C622033404D00C291A6 /* serpente.png in Resources */,
+				407C0871203D68E700478F53 /* Rectangle VI.png in Resources */,
 				99AF6569202DAE7900F49A3E /* LaunchScreen.storyboard in Resources */,
+				407C0877203D68E700478F53 /* bird2.png in Resources */,
+				407C0878203D68E700478F53 /* birdLeft.png in Resources */,
+				407C0874203D68E700478F53 /* nido.png in Resources */,
 				99AF65A0202E351C00F49A3E /* MemoSound.storyboard in Resources */,
 				99AF658D202DB08B00F49A3E /* NoWordGenerator.storyboard in Resources */,
 				6F6CD9302033572B00BABC3F /* ShowNoWords.storyboard in Resources */,
-				6FFDA8C8203C3B8300CEC24B /* noWordsGenerator.plist in Resources */,
 				6FEA993220358F4600491A3E /* ActionsNoWords.storyboard in Resources */,
-				40A37CBF203A2A250074ED37 /* SoundsTrainer.storyboard in Resources */,
+				407C086E203D68E700478F53 /* esseSpezzata.m4a in Resources */,
+				407C086D203D68E700478F53 /* Rectangle 5.png in Resources */,
+				407C0879203D68E700478F53 /* affricataSorda.m4a in Resources */,
+				407C0875203D68E700478F53 /* Rectangle YEL.png in Resources */,
 				99AF65AA202E3A2500F49A3E /* 1.wav in Resources */,
 				99AF6566202DAE7900F49A3E /* Assets.xcassets in Resources */,
 				400B9C64203341C100C291A6 /* Snaker.storyboard in Resources */,
 				99AF65A8202E3A2500F49A3E /* 3.wav in Resources */,
 				99AF6561202DAE7900F49A3E /* Main.storyboard in Resources */,
 				99AF6598202DB14B00F49A3E /* Snaker.sks in Resources */,
+				407C0873203D68E700478F53 /* Rectangle LB.png in Resources */,
 				9932A998203AE1A90055CD8D /* ToccaLaLettera.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -398,8 +458,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				40A37CC8203A2A670074ED37 /* affricataSorda.m4a in Resources */,
-				40A37CC4203A2A610074ED37 /* esseSpezzata.m4a in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -407,8 +465,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				40A37CC9203A2A670074ED37 /* affricataSorda.m4a in Resources */,
-				40A37CC5203A2A610074ED37 /* esseSpezzata.m4a in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -422,10 +478,10 @@
 				6F4C7F81203B544600E1755B /* noWordGeneratorTableViewCell.swift in Sources */,
 				40F911702031DCD1009F6961 /* SnakerViewController.swift in Sources */,
 				99AF6592202DB0F600F49A3E /* NoWordGenerator.swift in Sources */,
-				40A37CC1203A2A400074ED37 /* SoundsTrainerViewController.swift in Sources */,
 				99AF655E202DAE7900F49A3E /* ViewController.swift in Sources */,
 				9932A9A6203B312F0055CD8D /* Sfattabene.swift in Sources */,
 				9932A996203AE1910055CD8D /* ToccaLaLetteraViewController.swift in Sources */,
+				407C085C203D68C500478F53 /* SoundsTrainerViewController.swift in Sources */,
 				99AF6564202DAE7900F49A3E /* loscodershermanos.xcdatamodeld in Sources */,
 				9932A9A4203B23990055CD8D /* LetteraStyle2.swift in Sources */,
 				99AF65A2202E352800F49A3E /* MemoSoundViewController.swift in Sources */,
