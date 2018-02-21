@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="3JF-9u-bGb">
-    <device id="ipad9_7" orientation="landscape">
+    <device id="ipad12_9" orientation="landscape">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -15,24 +15,34 @@
             <objects>
                 <viewController id="3JF-9u-bGb" customClass="LettereGameViewController" customModule="loscodershermanos" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="LjX-nB-LRz">
-                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                        <rect key="frame" x="0.0" y="0.0" width="1366" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="BDg-k4-2ET">
-                                <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BDg-k4-2ET">
+                                <rect key="frame" x="0.0" y="0.0" width="1366" height="1024"/>
                                 <subviews>
-                                    <view contentMode="scaleToFill" fixedFrame="YES" restorationIdentifier="lettera" translatesAutoresizingMaskIntoConstraints="NO" id="hj7-ep-LCy" customClass="ToccaLaLetteraViewController" customModule="loscodershermanos" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="0.0" width="1024" height="685"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <color key="backgroundColor" white="0.0" alpha="0.71527183219178081" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <view contentMode="scaleToFill" restorationIdentifier="lettera" translatesAutoresizingMaskIntoConstraints="NO" id="hj7-ep-LCy" customClass="ToccaLaLetteraViewController" customModule="loscodershermanos" customModuleProvider="target">
+                                        <rect key="frame" x="48" y="42" width="1270" height="940"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <gestureRecognizers/>
                                     </view>
                                 </subviews>
-                                <color key="backgroundColor" red="0.98572033643722534" green="0.99163562059402466" blue="0.013523970730602741" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" red="0.065340571105480194" green="0.85166257619857788" blue="0.5333130955696106" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="hj7-ep-LCy" secondAttribute="trailing" constant="48" id="1yg-Ai-L3L"/>
+                                    <constraint firstItem="hj7-ep-LCy" firstAttribute="leading" secondItem="BDg-k4-2ET" secondAttribute="leading" constant="48" id="Rkf-Ng-ySh"/>
+                                    <constraint firstAttribute="bottom" secondItem="hj7-ep-LCy" secondAttribute="bottom" constant="42" id="S7n-Ww-zyO"/>
+                                    <constraint firstItem="hj7-ep-LCy" firstAttribute="top" secondItem="BDg-k4-2ET" secondAttribute="top" constant="42" id="fRt-5s-JDY"/>
+                                </constraints>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="BDg-k4-2ET" firstAttribute="top" secondItem="LjX-nB-LRz" secondAttribute="top" id="CRa-LU-76C"/>
+                            <constraint firstAttribute="trailing" secondItem="BDg-k4-2ET" secondAttribute="trailing" id="haW-U8-z7X"/>
+                            <constraint firstItem="BDg-k4-2ET" firstAttribute="leading" secondItem="LjX-nB-LRz" secondAttribute="leading" id="vPC-q0-2tU"/>
+                            <constraint firstItem="BDg-k4-2ET" firstAttribute="bottom" secondItem="UEu-NZ-Iem" secondAttribute="bottom" id="zid-ui-r1D"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="UEu-NZ-Iem"/>
                     </view>
                     <connections>

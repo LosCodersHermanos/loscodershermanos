@@ -32,6 +32,7 @@
 		6F6CD92E203356B500BABC3F /* ShowNoWordsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F6CD92D203356B500BABC3F /* ShowNoWordsViewController.swift */; };
 		6F6CD9302033572B00BABC3F /* ShowNoWords.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6F6CD92F2033572B00BABC3F /* ShowNoWords.storyboard */; };
 		6FEA993220358F4600491A3E /* ActionsNoWords.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6FEA993120358F4600491A3E /* ActionsNoWords.storyboard */; };
+		990D6997203DAEC900347E2A /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 990D6996203DAEC900347E2A /* MainViewController.swift */; };
 		9932A996203AE1910055CD8D /* ToccaLaLetteraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9932A995203AE1910055CD8D /* ToccaLaLetteraViewController.swift */; };
 		9932A998203AE1A90055CD8D /* ToccaLaLettera.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9932A997203AE1A90055CD8D /* ToccaLaLettera.storyboard */; };
 		9932A9A4203B23990055CD8D /* LetteraStyle2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9932A9A3203B23990055CD8D /* LetteraStyle2.swift */; };
@@ -101,6 +102,7 @@
 		6F6CD92D203356B500BABC3F /* ShowNoWordsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowNoWordsViewController.swift; sourceTree = "<group>"; };
 		6F6CD92F2033572B00BABC3F /* ShowNoWords.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ShowNoWords.storyboard; sourceTree = "<group>"; };
 		6FEA993120358F4600491A3E /* ActionsNoWords.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ActionsNoWords.storyboard; sourceTree = "<group>"; };
+		990D6996203DAEC900347E2A /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		9932A995203AE1910055CD8D /* ToccaLaLetteraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToccaLaLetteraViewController.swift; sourceTree = "<group>"; };
 		9932A997203AE1A90055CD8D /* ToccaLaLettera.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ToccaLaLettera.storyboard; sourceTree = "<group>"; };
 		9932A9A3203B23990055CD8D /* LetteraStyle2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LetteraStyle2.swift; sourceTree = "<group>"; };
@@ -266,6 +268,7 @@
 			isa = PBXGroup;
 			children = (
 				99AF655F202DAE7900F49A3E /* Main.storyboard */,
+				990D6996203DAEC900347E2A /* MainViewController.swift */,
 				407C0859203D68A200478F53 /* SoundsTrainer.storyboard */,
 				99AF658C202DB08B00F49A3E /* NoWordGenerator.storyboard */,
 				400B9C612033404D00C291A6 /* serpente.png */,
@@ -484,6 +487,7 @@
 				407C085C203D68C500478F53 /* SoundsTrainerViewController.swift in Sources */,
 				99AF6564202DAE7900F49A3E /* loscodershermanos.xcdatamodeld in Sources */,
 				9932A9A4203B23990055CD8D /* LetteraStyle2.swift in Sources */,
+				990D6997203DAEC900347E2A /* MainViewController.swift in Sources */,
 				99AF65A2202E352800F49A3E /* MemoSoundViewController.swift in Sources */,
 				996183AA203B3AF50084BF74 /* LettereGameViewController.swift in Sources */,
 				99AF655C202DAE7900F49A3E /* AppDelegate.swift in Sources */,
@@ -655,7 +659,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 2P7Y8V53M5;
+				DEVELOPMENT_TEAM = 3H85PPY5GT;
 				INFOPLIST_FILE = loscodershermanos/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = LuigiScherillo.loscodershermanos;
@@ -670,7 +674,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 2P7Y8V53M5;
+				DEVELOPMENT_TEAM = 3H85PPY5GT;
 				INFOPLIST_FILE = loscodershermanos/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = LuigiScherillo.loscodershermanos;
