@@ -54,6 +54,12 @@
 		9932A9A4203B23990055CD8D /* LetteraStyle2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9932A9A3203B23990055CD8D /* LetteraStyle2.swift */; };
 		9932A9A6203B312F0055CD8D /* Sfattabene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9932A9A5203B312F0055CD8D /* Sfattabene.swift */; };
 		996183AA203B3AF50084BF74 /* LettereGameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 996183A9203B3AF50084BF74 /* LettereGameViewController.swift */; };
+		9977DFDA203DD2A600FB735F /* ViewControllerShowCards.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9977DFD6203DD2A600FB735F /* ViewControllerShowCards.swift */; };
+		9977DFDB203DD2A600FB735F /* ImageCardList.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9977DFD7203DD2A600FB735F /* ImageCardList.plist */; };
+		9977DFDC203DD2A600FB735F /* insertImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9977DFD8203DD2A600FB735F /* insertImageCell.swift */; };
+		9977DFDD203DD2A600FB735F /* CardGameCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9977DFD9203DD2A600FB735F /* CardGameCollectionViewCell.swift */; };
+		9977DFDF203DD2B300FB735F /* CardMain.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9977DFDE203DD2B300FB735F /* CardMain.storyboard */; };
+		9977DFE1203DD3FD00FB735F /* CardGameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9977DFE0203DD3FD00FB735F /* CardGameViewController.swift */; };
 		99AF655C202DAE7900F49A3E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99AF655B202DAE7900F49A3E /* AppDelegate.swift */; };
 		99AF655E202DAE7900F49A3E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99AF655D202DAE7900F49A3E /* ViewController.swift */; };
 		99AF6561202DAE7900F49A3E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 99AF655F202DAE7900F49A3E /* Main.storyboard */; };
@@ -128,6 +134,12 @@
 		9932A9A3203B23990055CD8D /* LetteraStyle2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LetteraStyle2.swift; sourceTree = "<group>"; };
 		9932A9A5203B312F0055CD8D /* Sfattabene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Sfattabene.swift; sourceTree = "<group>"; };
 		996183A9203B3AF50084BF74 /* LettereGameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LettereGameViewController.swift; sourceTree = "<group>"; };
+		9977DFD6203DD2A600FB735F /* ViewControllerShowCards.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ViewControllerShowCards.swift; path = ../../../Downloads/SpeakCorrectfunzionante/SpeakCorrect/ViewControllerShowCards.swift; sourceTree = "<group>"; };
+		9977DFD7203DD2A600FB735F /* ImageCardList.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = ImageCardList.plist; path = ../../../Downloads/SpeakCorrectfunzionante/SpeakCorrect/ImageCardList.plist; sourceTree = "<group>"; };
+		9977DFD8203DD2A600FB735F /* insertImageCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = insertImageCell.swift; path = ../../../Downloads/SpeakCorrectfunzionante/SpeakCorrect/insertImageCell.swift; sourceTree = "<group>"; };
+		9977DFD9203DD2A600FB735F /* CardGameCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardGameCollectionViewCell.swift; sourceTree = "<group>"; };
+		9977DFDE203DD2B300FB735F /* CardMain.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = CardMain.storyboard; sourceTree = "<group>"; };
+		9977DFE0203DD3FD00FB735F /* CardGameViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CardGameViewController.swift; path = ../../../Downloads/CardGameViewController.swift; sourceTree = "<group>"; };
 		99AF6558202DAE7900F49A3E /* loscodershermanos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = loscodershermanos.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		99AF655B202DAE7900F49A3E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		99AF655D202DAE7900F49A3E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -291,6 +303,12 @@
 		99AF659C202DB1A200F49A3E /* StoryBoards */ = {
 			isa = PBXGroup;
 			children = (
+				9977DFDE203DD2B300FB735F /* CardMain.storyboard */,
+				9977DFD9203DD2A600FB735F /* CardGameCollectionViewCell.swift */,
+				9977DFD7203DD2A600FB735F /* ImageCardList.plist */,
+				9977DFD8203DD2A600FB735F /* insertImageCell.swift */,
+				9977DFD6203DD2A600FB735F /* ViewControllerShowCards.swift */,
+				9977DFE0203DD3FD00FB735F /* CardGameViewController.swift */,
 				99AF655F202DAE7900F49A3E /* Main.storyboard */,
 				990D6996203DAEC900347E2A /* MainViewController.swift */,
 				407C0859203D68A200478F53 /* SoundsTrainer.storyboard */,
@@ -445,6 +463,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				40243804203D6B21002CCA98 /* Home.png in Resources */,
+				9977DFDF203DD2B300FB735F /* CardMain.storyboard in Resources */,
 				99AF65AB202E3A2500F49A3E /* 2.wav in Resources */,
 				407C0870203D68E700478F53 /* Rectangle BL.png in Resources */,
 				407C0872203D68E700478F53 /* bird.png in Resources */,
@@ -455,6 +474,7 @@
 				4038C81B203DB71B00CA1E3E /* affricataSorda.m4a in Resources */,
 				407C086C203D68E700478F53 /* Rectangle GR.png in Resources */,
 				99AF659E202DD9EE00F49A3E /* dizionario.txt in Resources */,
+				9977DFDB203DD2A600FB735F /* ImageCardList.plist in Resources */,
 				407C0876203D68E700478F53 /* Rectangle OR.png in Resources */,
 				407C085A203D68A300478F53 /* SoundsTrainer.storyboard in Resources */,
 				99AF658F202DB0A100F49A3E /* CardGame.storyboard in Resources */,
@@ -520,9 +540,12 @@
 			files = (
 				6F4C7F81203B544600E1755B /* noWordGeneratorTableViewCell.swift in Sources */,
 				40F911702031DCD1009F6961 /* SnakerViewController.swift in Sources */,
+				9977DFDC203DD2A600FB735F /* insertImageCell.swift in Sources */,
 				99AF6592202DB0F600F49A3E /* NoWordGenerator.swift in Sources */,
 				99AF655E202DAE7900F49A3E /* ViewController.swift in Sources */,
 				9932A9A6203B312F0055CD8D /* Sfattabene.swift in Sources */,
+				9977DFE1203DD3FD00FB735F /* CardGameViewController.swift in Sources */,
+				9977DFDA203DD2A600FB735F /* ViewControllerShowCards.swift in Sources */,
 				9932A996203AE1910055CD8D /* ToccaLaLetteraViewController.swift in Sources */,
 				407C085C203D68C500478F53 /* SoundsTrainerViewController.swift in Sources */,
 				99AF6564202DAE7900F49A3E /* loscodershermanos.xcdatamodeld in Sources */,
@@ -532,6 +555,7 @@
 				996183AA203B3AF50084BF74 /* LettereGameViewController.swift in Sources */,
 				99AF655C202DAE7900F49A3E /* AppDelegate.swift in Sources */,
 				6F6CD92E203356B500BABC3F /* ShowNoWordsViewController.swift in Sources */,
+				9977DFDD203DD2A600FB735F /* CardGameCollectionViewCell.swift in Sources */,
 				99AF6594202DB11500F49A3E /* CardGame.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

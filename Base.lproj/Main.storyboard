@@ -284,6 +284,18 @@
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wgP-cy-gFl">
                                 <rect key="frame" x="0.0" y="0.0" width="1112" height="834"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hwK-iM-xyy">
+                                        <rect key="frame" x="73" y="93" width="240" height="240"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="240" id="Udw-Bt-SSD"/>
+                                        </constraints>
+                                        <state key="normal" backgroundImage="NoWordsIcon"/>
+                                        <connections>
+                                            <segue destination="RXE-Hv-GwZ" kind="show" id="QAh-e6-cfl"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
                                 <color key="backgroundColor" red="0.38420850038528442" green="0.59177958965301514" blue="0.92553216218948364" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                             </view>
                         </subviews>
@@ -294,6 +306,14 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PWw-oM-cpe" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="685" y="1673"/>
+        </scene>
+        <!--CardMain-->
+        <scene sceneID="pvd-yo-yv3">
+            <objects>
+                <viewControllerPlaceholder storyboardName="CardMain" id="RXE-Hv-GwZ" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="IAp-oK-BSY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="471" y="2274"/>
         </scene>
         <!--ToccaLaLettera-->
         <scene sceneID="PMX-Zd-ZJv">
