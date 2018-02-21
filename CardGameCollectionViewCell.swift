@@ -11,4 +11,5 @@ import UIKit
 class CollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var ImageCard: UIImageView!
     @IBOutlet weak var CardTextField: UITextField!
+    //Print
 }
