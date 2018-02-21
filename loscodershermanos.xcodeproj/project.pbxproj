@@ -9,6 +9,12 @@
 /* Begin PBXBuildFile section */
 		400B9C622033404D00C291A6 /* serpente.png in Resources */ = {isa = PBXBuildFile; fileRef = 400B9C612033404D00C291A6 /* serpente.png */; };
 		400B9C64203341C100C291A6 /* Snaker.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 400B9C63203341C100C291A6 /* Snaker.storyboard */; };
+		40243800203D6AF7002CCA98 /* Gioco Bottoni .png in Resources */ = {isa = PBXBuildFile; fileRef = 402437FF203D6AF7002CCA98 /* Gioco Bottoni .png */; };
+		40243801203D6AF7002CCA98 /* Gioco Bottoni .png in Resources */ = {isa = PBXBuildFile; fileRef = 402437FF203D6AF7002CCA98 /* Gioco Bottoni .png */; };
+		40243802203D6AF7002CCA98 /* Gioco Bottoni .png in Resources */ = {isa = PBXBuildFile; fileRef = 402437FF203D6AF7002CCA98 /* Gioco Bottoni .png */; };
+		40243804203D6B21002CCA98 /* Home.png in Resources */ = {isa = PBXBuildFile; fileRef = 40243803203D6B21002CCA98 /* Home.png */; };
+		40243805203D6B21002CCA98 /* Home.png in Resources */ = {isa = PBXBuildFile; fileRef = 40243803203D6B21002CCA98 /* Home.png */; };
+		40243806203D6B21002CCA98 /* Home.png in Resources */ = {isa = PBXBuildFile; fileRef = 40243803203D6B21002CCA98 /* Home.png */; };
 		407C085A203D68A300478F53 /* SoundsTrainer.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 407C0859203D68A200478F53 /* SoundsTrainer.storyboard */; };
 		407C085C203D68C500478F53 /* SoundsTrainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 407C085B203D68C500478F53 /* SoundsTrainerViewController.swift */; };
 		407C086C203D68E700478F53 /* Rectangle GR.png in Resources */ = {isa = PBXBuildFile; fileRef = 407C085E203D68E700478F53 /* Rectangle GR.png */; };
@@ -79,6 +85,8 @@
 /* Begin PBXFileReference section */
 		400B9C612033404D00C291A6 /* serpente.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = serpente.png; sourceTree = "<group>"; };
 		400B9C63203341C100C291A6 /* Snaker.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Snaker.storyboard; sourceTree = "<group>"; };
+		402437FF203D6AF7002CCA98 /* Gioco Bottoni .png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Gioco Bottoni .png"; sourceTree = "<group>"; };
+		40243803203D6B21002CCA98 /* Home.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Home.png; sourceTree = "<group>"; };
 		407C0859203D68A200478F53 /* SoundsTrainer.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = SoundsTrainer.storyboard; sourceTree = "<group>"; };
 		407C085B203D68C500478F53 /* SoundsTrainerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SoundsTrainerViewController.swift; sourceTree = "<group>"; };
 		407C085E203D68E700478F53 /* Rectangle GR.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Rectangle GR.png"; sourceTree = "<group>"; };
@@ -174,6 +182,8 @@
 				407C0860203D68E700478F53 /* esseSpezzata.m4a */,
 				407C0861203D68E700478F53 /* Rectangle LG.png */,
 				407C0862203D68E700478F53 /* Rectangle BL.png */,
+				40243803203D6B21002CCA98 /* Home.png */,
+				402437FF203D6AF7002CCA98 /* Gioco Bottoni .png */,
 				407C0863203D68E700478F53 /* Rectangle VI.png */,
 				407C0864203D68E700478F53 /* bird.png */,
 				407C0865203D68E700478F53 /* Rectangle LB.png */,
@@ -417,6 +427,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				40243804203D6B21002CCA98 /* Home.png in Resources */,
 				99AF65AB202E3A2500F49A3E /* 2.wav in Resources */,
 				407C0870203D68E700478F53 /* Rectangle BL.png in Resources */,
 				407C0872203D68E700478F53 /* bird.png in Resources */,
@@ -451,6 +462,7 @@
 				99AF6598202DB14B00F49A3E /* Snaker.sks in Resources */,
 				407C0873203D68E700478F53 /* Rectangle LB.png in Resources */,
 				9932A998203AE1A90055CD8D /* ToccaLaLettera.storyboard in Resources */,
+				40243800203D6AF7002CCA98 /* Gioco Bottoni .png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -458,6 +470,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				40243805203D6B21002CCA98 /* Home.png in Resources */,
+				40243801203D6AF7002CCA98 /* Gioco Bottoni .png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -465,6 +479,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				40243806203D6B21002CCA98 /* Home.png in Resources */,
+				40243802203D6AF7002CCA98 /* Gioco Bottoni .png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -23,11 +23,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="1112" height="834"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Gioco Bottoni" translatesAutoresizingMaskIntoConstraints="NO" id="BeC-ay-JPJ">
-                                <rect key="frame" x="-5" y="4" width="1117" height="830"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Gioco Bottoni" translatesAutoresizingMaskIntoConstraints="NO" id="fNj-Y8-w75">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Gioco Bottoni .png" translatesAutoresizingMaskIntoConstraints="NO" id="fNj-Y8-w75">
                                 <rect key="frame" x="0.0" y="0.0" width="1112" height="834"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
@@ -47,7 +43,7 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8K2-bA-9M8">
                                 <rect key="frame" x="20" y="20" width="142" height="97"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="Home"/>
+                                <state key="normal" image="Home.png"/>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dUN-OL-dbD">
                                 <rect key="frame" x="968" y="723" width="154" height="100"/>
@@ -210,8 +206,8 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Gioco Bottoni" width="1024" height="768"/>
-        <image name="Home" width="84" height="84"/>
+        <image name="Gioco Bottoni .png" width="1024" height="768"/>
+        <image name="Home.png" width="84" height="84"/>
         <image name="Impostazioni" width="84" height="84"/>
         <image name="Rectangle 5.png" width="184" height="172"/>
         <image name="Rectangle BL.png" width="184" height="172"/>
