@@ -82,7 +82,9 @@ class SoundsTrainerViewController: UIViewController, AVAudioPlayerDelegate {
     
     @IBAction func giocaDiNuovo(_ sender: UIButton) {
         restartGame()
+        restartAnimation()
     }
+    
     
     func restartAnimation() {
         self.movingObject.center.y = 129
